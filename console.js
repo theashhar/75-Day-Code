@@ -1,8 +1,8 @@
-console.log("yo")
-let a=71;
-console.log(a)
-a='bro'
-console.log(a)
+// console.log("yo")
+// let a=71;
+// console.log(a)
+// a='bro'
+// console.log(a)
 
 /* comment para */
 
@@ -26,36 +26,49 @@ console.log(a)
     // console.log('Tip =', Tip,"%\n", 'Total =', Total)
     // name = "ashahr , #designer come coder"
 
-    x =Math.floor(Math.random() * 99)
-    console.log(x)
+    // x =Math.floor(Math.random() * 99)
+    // console.log(x)
     
     
-    //Weather app
-    let weather = prompt("hows the weather?")
+    // //Weather app
+    // let weather = prompt("hows the weather?")
     
-    if (weather =='rain')
-    {
-        console.log("take umbrella")
-    }   
-    else
-    {
-        console.log("wear sunglass")   
-    }
+    // if (weather =='rain')
+    // {
+    //     console.log("take umbrella")
+    // }   
+    // else
+    // {
+    //     console.log("wear sunglass")   
+    // }
     
     
     
     // funtions
     
+    // function callName(name1){
+    //     console.log(name1)
+    // }
+    // callName('Ashhar')
+
+
+
     // function greetings(name)
     // {
     //     // greet = 'hi ' + name + ', wassup'
     //     greet = `hi ${name} wassup !`    //other way
     //     console.log(greet);
     // }
+    // greet= `hi ${name} wassup !`
+    // greetings(prompt('Enter name'))     //call 
+
+    // function sum(a, b) {
+    //     return (a+b)
+    // }
     
-    // // greetings(prompt('Enter name'))     //call 
-    // name = "ashahr , #designer come coder"
-    
+    // num=sum(8,2)
+    // console.log(num)
+
     // function FoodCalulator(food, tip)
     // {
     //     foodamt = Number(food)
@@ -69,15 +82,17 @@ console.log(a)
      
     
     
-    // // Arrow function with implicit return
-    // const sumArrow = (a, b) => a+b       //"const" acts as a constant that will not change while "let" can change 
+    // Arrow function with implicit return
+    const sumArrow = (a, b) => a+b       //"const" acts as a constant that will not change while "let" can change 
     
-    // // Arrow function with implicit return with return
-    // const sum = (a, b) => 
-    // {   return a+b }
+    // Arrow function with explicit with return
+    const sum = (a, b) => 
+    {   return a+b }
     
-    // console.log(sumArrow(3,65))
-    
+    console.log(sumArrow(3,65))
+    //ARRAYS
+    //Array Methods (slice, lemgth, push, pop, remove, indexOf)
+
     // const groceries = ['milk', 'egg', 'biscuit',]
     // groceries.push('butter', 'peanut')
     // // groceries.push(prompt('enter item'))
