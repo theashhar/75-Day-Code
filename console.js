@@ -89,7 +89,7 @@
     const sum = (a, b) => 
     {   return a+b }
     
-    console.log(sumArrow(3,65))
+    // console.log(sumArrow(3,65))
     //ARRAYS
     //Array Methods (slice, lemgth, push, pop, remove, indexOf)
 
@@ -107,6 +107,7 @@
     // // console.log(groceries.toString()) // prints array separated by comma
     // console.log(groceries.join(" yo "))
     
+
     // // sorting
     // let numbers = [1,54,23,546,67,2343.23,5343]
     // console.log(numbers.sort(function(a,b) {return(a-b)}))
@@ -126,7 +127,31 @@
     //     first: 'Ashhar',
     //     last: 'Ali',
     //     age: '32'
-    //     }
-      
+    //     }      
     // console.log(student.age)
-    
+
+//     const ppl = {
+//         name: 'John',
+//         age: 34,
+//     }
+//    console.log('age is',ppl.age)
+//       console.log(ppl['name'])
+//    ppl.name= 'Asa' 
+//    console.log(ppl['name'])
+   
+
+const introducer = (name,age) => {
+    const person = {
+        name: name,
+        age: age,
+        liability: 400,
+        asset: 600,
+        networth: function () {
+            return this.asset - this.liability
+        }
+    }
+
+const intro = `Yo man I'm ${person.name} my age is ${person.age}.wassup. My networth is ${person.networth()}`
+return intro
+}
+console.log(introducer('sdsd', 23))
