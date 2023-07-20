@@ -83,11 +83,11 @@
     
     
     // Arrow function with implicit return
-    const sumArrow = (a, b) => a+b       //"const" acts as a constant that will not change while "let" can change 
+    // const sumArrow = (a, b) => a+b       //"const" acts as a constant that will not change while "let" can change 
     
-    // Arrow function with explicit with return
-    const sum = (a, b) => 
-    {   return a+b }
+    // // Arrow function with explicit with return
+    // const sum = (a, b) => 
+    // {   return a+b }
     
     // console.log(sumArrow(3,65))
     //ARRAYS
@@ -140,18 +140,30 @@
 //    console.log(ppl['name'])
    
 
-const introducer = (name,age) => {
-    const person = {
-        name: name,
-        age: age,
-        liability: 400,
-        asset: 600,
-        networth: function () {
-            return this.asset - this.liability
-        }
-    }
+// const introducer = (name,age) => {
+//     const person = {
+//         name: name,
+//         age: age,
+//         liability: 400,
+//         asset: 600,
+//         networth: function () {
+//             return this.asset - this.liability
+//         }
+//     }
 
-const intro = `Yo man I'm ${person.name} my age is ${person.age}.wassup. My networth is ${person.networth()}`
-return intro
+// const intro = `Yo man I'm ${person.name} my age is ${person.age}.wassup. My networth is ${person.networth()}`
+// return intro
+// }
+// console.log(introducer('sdsd', 23))
+
+const groceries= ['fruit', 'milk', 'veg', 'butter', 'bicsuit']
+// for(let i=0; i<groceries.length; i++) {
+//     console.log(groceries[i])
+// }
+for(grocery of groceries)
+{   if(groceries.indexOf(grocery) == 0) 
+    console.log(grocery)
+
+    else 
+    console.log('bro')
 }
-console.log(introducer('sdsd', 23))
