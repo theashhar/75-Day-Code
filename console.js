@@ -123,37 +123,35 @@
     
     // objects in JS
     
-    // let student = {
-    //     first: 'Ashhar',
-    //     last: 'Ali',
-    //     age: '32'
-    //     }      
+    let student = {
+        first: 'Ashhar',
+        last: 'Ali',
+        age: '32'
+        }      
     // console.log(student.age)
 
-//     const ppl = {
-//         name: 'John',
-//         age: 34,
-//     }
-//    console.log('age is',ppl.age)
-//       console.log(ppl['name'])
-//    ppl.name= 'Asa' 
+    const ppl = {
+        name: 'John',
+        age: 34,
+    }
+   ppl.name= 'Asa' 
 //    console.log(ppl['name'])
    
 
-// const introducer = (name,age) => {
-//     const person = {
-//         name: name,
-//         age: age,
-//         liability: 400,
-//         asset: 600,
-//         networth: function () {
-//             return this.asset - this.liability
-//         }
-//     }
+const introducer = (name,age) => {
+    const person = {
+        name: name,
+        age: age,
+        liability: 400,
+        asset: 600,
+        networth: function () {
+            return this.asset - this.liability
+        }
+    }
 
-// const intro = `Yo man I'm ${person.name} my age is ${person.age}.wassup. My networth is ${person.networth()}`
-// return intro
-// }
+const intro = `Yo man I'm ${person.name} my age is ${person.age}.wassup. My networth is ${person.networth()}`
+return intro
+}
 // console.log(introducer('sdsd', 23))
 
 const groceries= ['fruit', 'milk', 'veg', 'butter', 'bicsuit']
@@ -161,9 +159,36 @@ const groceries= ['fruit', 'milk', 'veg', 'butter', 'bicsuit']
 //     console.log(groceries[i])
 // }
 for(grocery of groceries)
-{   if(groceries.indexOf(grocery) == 0) 
-    console.log(grocery)
-
-    else 
-    console.log('bro')
+{   
+//    if(groceries.indexOf(grocery)%2 == 0) 
+//     console.log(grocery)
+//     else 
+//     console.log('bro')
 }
+
+//for in LOOP
+
+    let counter=0
+    const howManyLetters = (phrase) => {
+        for (letter in phrase) {            //counts the number of letters in the array
+            result=Number(letter) + 1
+            counter=counter+1
+        }
+        console.log('First Way: '+ counter)
+        console.log('Second (.length) Way: ' + phrase.length)
+    }
+
+    // howManyLetters('What issds a person')
+
+    //Addition from array of numbers
+    
+    let result1 = 0
+    const sumArrray = (numbers) => {
+        for (number of numbers) {
+            result1 = result1 + number
+        }
+        return result1
+    }
+    let num = [4,6,24]
+    // console.log(sumArrray(num))
+
