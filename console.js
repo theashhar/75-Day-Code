@@ -192,3 +192,28 @@ for(grocery of groceries)
     let num = [4,6,24]
     // console.log(sumArrray(num))
 
+//FREQUENCY OF LETTERS IN A WORD
+    const letterFreq = (phrase) => {
+    //letterFreq('haha') = (h:2, a:2)     
+    //make frequency object
+    let frequency = {}
+    for (const letter of phrase) {
+        if(letter in frequency) { 
+            frequency[letter] = frequency[letter] + 1
+        }
+        else{
+            frequency[letter] = 1
+        }
+        }
+    return frequency
+        // let result = {}
+        // for (letter of phrase) {
+        //     if (result[letter]) {
+        //         result[letter] = result[letter] + 1
+        //     } else {
+        //         result[letter] = 1
+        //     }
+        // }
+        // return result
+    }
+    console.log(letterFreq('banana is the fruit'))
