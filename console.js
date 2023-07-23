@@ -53,14 +53,14 @@
 
 
 
-    // function greetings(name)
+    // function Greetings(name)
     // {
     //     // greet = 'hi ' + name + ', wassup'
     //     greet = `hi ${name} wassup !`    //other way
     //     console.log(greet);
     // }
     // greet= `hi ${name} wassup !`
-    // greetings(prompt('Enter name'))     //call 
+    // Greetings(prompt('Enter name'))     //call 
 
     // function sum(a, b) {
     //     return (a+b)
@@ -216,4 +216,28 @@ for(grocery of groceries)
         // }
         // return result
     }
-    console.log(letterFreq('banana is the fruit'))
+    // console.log(letterFreq('banana is the fruit'))
+
+//Factory function
+
+    function createCourse(title) {
+        return {
+            title: title,
+            enroll() {
+                console.log('You are enrolled');
+            }
+        }
+    }
+console.log(createCourse('Javscript'));
+
+
+//Constructor function, name starts with Capital letter 
+    function Coursejs(title) {
+        this.title = title,
+        this.enroll() = function() {
+            console.log('You are enrolled');    
+        }
+    }
+    const course = new Coursejs('Javascript')
+    course.enroll()
+    // console.log(course)
