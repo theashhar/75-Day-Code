@@ -199,7 +199,7 @@ for(grocery of groceries)
     let frequency = {}
     for (const letter of phrase) {
         if(letter in frequency) { 
-            frequency[letter] = frequency[letter] + 1
+            frequency[letter]++
         }
         else{
             frequency[letter] = 1
@@ -216,28 +216,51 @@ for(grocery of groceries)
         // }
         // return result
     }
-    // console.log(letterFreq('banana is the fruit'))
+    // console.log(letterFreq('banana is the fruit'));
+
+    const wordFreq = (phrase1) => {
+        let frequency1 = {}
+        const words = phrase1.split(' ')
+        // console.log(words)
+        for (let word of words){
+            if (word in frequency1){
+                frequency1[word]++ }
+            else {
+                frequency1[word]=1
+            }                
+        }
+        return frequency1
+    }
+    console.log(wordFreq('banana is the the fruit'))    
+
+//  OTHER WAY
+const wordFreq2 = (phrase1) => {
+    const words = phrase1.split(' ')
+    return letterFreq(words)
+}
+console.log(wordFreq2('banana is the the fruit'))    
+
 
 //Factory function
 
-    function createCourse(title) {
-        return {
-            title: title,
-            enroll() {
-                console.log('You are enrolled');
-            }
-        }
-    }
-console.log(createCourse('Javscript'));
+//     function createCourse(title) {
+//         return {
+//             title: title,
+//             enroll() {
+//                 console.log('You are enrolled');
+//             }
+//         }
+//     }
+// console.log(createCourse('Javscript'));
 
 
-//Constructor function, name starts with Capital letter 
-    function Coursejs(title) {
-        this.title = title,
-        this.enroll() = function() {
-            console.log('You are enrolled');    
-        }
-    }
-    const course = new Coursejs('Javascript')
-    course.enroll()
-    // console.log(course)
+// //Constructor function, name starts with Capital letter 
+//     function Coursejs(title) {
+//         this.title = title,
+//         this.enroll() = function() {
+//             console.log('You are enrolled');    
+//         }
+//     }
+//     const course = new Coursejs('Javascript')
+//     course.enroll()
+//     // console.log(course)
