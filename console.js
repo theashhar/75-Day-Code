@@ -231,14 +231,14 @@ for(grocery of groceries)
         }
         return frequency1
     }
-    console.log(wordFreq('banana is the the fruit'))    
+    // console.log(wordFreq('banana is the the fruit'))    
 
 //  OTHER WAY
 const wordFreq2 = (phrase1) => {
     const words = phrase1.split(' ')
     return letterFreq(words)
 }
-console.log(wordFreq2('banana is the the fruit'))    
+// console.log(wordFreq2('banana is the the fruit'))    
 
 
 //Factory function
@@ -264,3 +264,20 @@ console.log(wordFreq2('banana is the the fruit'))
 //     const course = new Coursejs('Javascript')
 //     course.enroll()
 //     // console.log(course)
+
+//Conventional function
+const double = (number) => {
+    result3 = []
+    for(let num of number){
+        result3.push(num*2)
+    }
+    return result3
+}
+console.log(double([1, 4 ,12]))
+
+//MAP() FUNCTION
+
+const doubleMap = (number) => {
+    return number.map(num => num*2)
+}
+console.log(doubleMap([1, 4 ,12]))
