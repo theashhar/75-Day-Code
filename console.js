@@ -273,11 +273,33 @@ const double = (number) => {
     }
     return result3
 }
-console.log(double([1, 4 ,12]))
+// console.log(double([1, 4 ,12]))
 
 //MAP() FUNCTION
 
 const doubleMap = (number) => {
     return number.map(num => num*2)
 }
-console.log(doubleMap([1, 4 ,12]))
+// console.log(doubleMap([1, 4 ,12]))
+
+// FILTER
+//filter([1,4,6,123,232,23,54], 6) => return no greater than 6
+
+const filter1 = (numArray, greaterThan) => {
+    let result4 = []
+    for(let num of numArray){
+        if(num > greaterThan){
+        result4.push(num)
+        }
+    }
+    return result4
+}
+// console.log(filter1([1, 4, 6, 123, 232,6,1231, 23, 54], 6))
+
+//filter(function)
+
+const filterNum = (numArray, greaterThan) => {
+    return numArray.filter(num => num > 6)
+}
+// console.log(filterNum([1, 4, 6, 123, 232,6,1231, 23, 54]))
+
