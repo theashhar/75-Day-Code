@@ -301,5 +301,26 @@ const filter1 = (numArray, greaterThan) => {
 const filterNum = (numArray, greaterThan) => {
     return numArray.filter(num => num > 6)
 }
-// console.log(filterNum([1, 4, 6, 123, 232,6,1231, 23, 54]))
+// console.log(filterNum([1, 4, 6, 123, 232,6,1231, 23, 54]).join(' || '))
+//join adds to specific array element
 
+//REDUCE- reduce the array in to single digit
+function addNo(a,b){
+    return a+b
+}
+let num1 =[3,25,1,]
+let result5 = num1.reduce((a,b) => a+b, 10)
+//10 sets a starter value i.e it adds 10 before adding anything
+//or
+let result6 = num1.reduce(addNo)
+console.log(`${result5} '&' ${result6}` )
+
+const actors = [
+    {name: 'A', netW:2},
+    {name: 'b', netW:1},
+    {name: 'c', netW:6},
+    {name: 'd', netW:4},
+]
+let actorsSum = actors. reduce((a,b) => a + b.netW, 0)
+console.log(actorsSum)
+    
