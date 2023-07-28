@@ -321,6 +321,16 @@ const actors = [
     {name: 'c', netW:6},
     {name: 'd', netW:4},
 ]
-let actorsSum = actors. reduce((a,b) => a + b.netW, 0)
-console.log(actorsSum)
+let actorsSum = actors.reduce((a,b) => a+b.netW, 0)
+// console.log(actorsSum)
     
+let Print = document.getElementById('title')
+console.log(Print.innerText)
+
+let yellowDiv = document.getElementById("yellow")
+let greenDiv = document.getElementById("green")
+let blueDiv = document.getElementById("blue")
+
+yellowDiv.onclick = () => console.log("clicked Yellow")
+greenDiv.onclick = () => console.log("clicked Green")
+blueDiv.onclick = () => console.log("clicked Blue")
