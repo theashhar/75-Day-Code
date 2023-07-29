@@ -313,7 +313,7 @@ let result5 = num1.reduce((a,b) => a+b, 10)
 //10 sets a starter value i.e it adds 10 before adding anything
 //or
 let result6 = num1.reduce(addNo)
-console.log(`${result5} '&' ${result6}` )
+// console.log(`${result5} '&' ${result6}` )
 
 const actors = [
     {name: 'A', netW:2},
@@ -325,12 +325,52 @@ let actorsSum = actors.reduce((a,b) => a+b.netW, 0)
 // console.log(actorsSum)
     
 let Print = document.getElementById('title')
-console.log(Print.innerText)
+// console.log(Print.innerText)
+// Print.innerHTML = 'hji'
 
-let yellowDiv = document.getElementById("yellow")
-let greenDiv = document.getElementById("green")
-let blueDiv = document.getElementById("blue")
+let Stone = document.getElementById("yellow")
+let Paper = document.getElementById("green")
+let Scissor = document.getElementById("blue")
 
-yellowDiv.onclick = () => console.log("clicked Yellow")
-greenDiv.onclick = () => console.log("clicked Green")
-blueDiv.onclick = () => console.log("clicked Blue")
+Stone.onclick = () => console.log("User Choose: Rock") 
+Paper.onclick = () => console.log("User Choose: Paper")
+Scissor.onclick = () => console.log("User Choose: Scissor")
+
+const squares = document.querySelectorAll('.colorSquare')
+
+// console.log(squares[0].value)
+
+//foreach loop
+squares.forEach(square => console.log(square.value))
+// Stone.onclick = function() {
+//     let user = Number(1)
+// }
+// Paper.onclick = function() {
+//     let user = Number(2)
+// }
+// Scissor.onclick = function() {
+//     let user = Number(3)
+// }
+
+
+compOutput = Math.ceil(Math.random() * 3)
+    // console.log(compOutput)
+
+// if (compOutput == 1) {
+//     console.log("Rock")
+// }
+// else if (compOutput == 2) {
+//     console.log("Paper")
+// }
+// else {
+//     console.log("scissor")
+// }
+// if (compOutput < user) {
+//     console.log("Rock")
+// }
+// else if (compOutput > user) {
+//     console.log("Paper")
+// }
+// else {
+//     console.log("scissor")
+// }
