@@ -6,7 +6,7 @@
 
 /* comment para */
 
-    // user input through promt
+    // user input through prompt
     // alert("Loading")
 
 
@@ -24,7 +24,7 @@
     
 
     // console.log('Tip =', Tip,"%\n", 'Total =', Total)
-    // name = "ashahr , #designer come coder"
+    // name = "ashhar , #designer come coder"
 
     // x =Math.floor(Math.random() * 99)
     // console.log(x)
@@ -44,7 +44,7 @@
     
     
     
-    // funtions
+    // functions
     
     // function callName(name1){
     //     console.log(name1)
@@ -69,7 +69,7 @@
     // num=sum(8,2)
     // console.log(num)
 
-    // function FoodCalulator(food, tip)
+    // function FoodCalculator(food, tip)
     // {
     //     foodamt = Number(food)
     //     tipPercentage = Number(tip / 100)
@@ -328,20 +328,30 @@ let Print = document.getElementById('title')
 // console.log(Print.innerText)
 // Print.innerHTML = 'hji'
 
-let Stone = document.getElementById("yellow")
-let Paper = document.getElementById("green")
-let Scissor = document.getElementById("blue")
+// let Stone = document.getElementById("yellow")
+// let Paper = document.getElementById("green")
+// let Scissor = document.getElementById("blue")
 
-Stone.onclick = () => console.log("User Choose: Rock") 
-Paper.onclick = () => console.log("User Choose: Paper")
-Scissor.onclick = () => console.log("User Choose: Scissor")
+// Stone.onclick = () => console.log("User Choose: Rock") 
+// Paper.onclick = () => console.log("User Choose: Paper")
+// Scissor.onclick = () => console.log("User Choose: Scissor")
 
 const squares = document.querySelectorAll('.colorSquare')
 
 // console.log(squares[0].value)
 
 //foreach loop
-squares.forEach(square => console.log(square.value))
+//Times clicked
+const timesClicked = {'blue': 0, 'green':0, 'yellow': 0}
+
+squares.forEach(square => {
+    square.onclick = () => {
+        timesClicked[square.value]++
+        square.innerText = timesClicked[square.value]
+        // console.log(`User clicked: `+ square.value)
+        }
+    }
+)
 // Stone.onclick = function() {
 //     let user = Number(1)
 // }
