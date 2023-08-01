@@ -122,20 +122,21 @@
     
     
     // objects in JS
-    
+    const sym = Symbol() 
     let student = {
         first: 'Ashhar',
         last: 'Ali',
-        age: '32'
+        age: '32',
+        [sym]: 'key2', //square bracket makes it symbol
         }      
     // console.log(student.age)
-
     const ppl = {
         name: 'John',
         age: 34,
     }
    ppl.name= 'Asa' 
-//    console.log(ppl['name'])
+   console.log(student)
+   console.log(typeof student[sym])
    
 
 const introducer = (name,age) => {
@@ -165,6 +166,10 @@ for(grocery of groceries)
 //     else 
 //     console.log('bro')
 }
+
+
+
+
 
 //for in LOOP
 
