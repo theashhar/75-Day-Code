@@ -124,20 +124,48 @@
     // objects in JS
     const sym = Symbol() 
     let student = {
-        first: 'Ashhar',
+        fullName : {
+            firstName: 'Ashhar',
+            lastName: 'Ali Ahmed',
+        },
         last: 'Ali',
         age: '32',
         [sym]: 'key2', //square bracket makes it symbol
         }      
-    // console.log(student.age)
     const ppl = {
         name: 'John',
         age: 34,
     }
    ppl.name= 'Asa' 
-   console.log(student)
-   console.log(typeof student[sym])
+//    console.log(student.fullName?.lastName) //? is given to avoif if else condition when it is fetched with API an lets suppose full name dosent exsist
+//    console.log(typeof student[sym])
+
+
+   //merging objects
+   let obj1 = {a:1, b:2}
+   let obj2 = {c:3, d:4}
+   let obj3 = Object.assign({},obj1,obj2)
+   let obj4 = {...obj1,...obj2} //New Method
+//    console.log(obj3)
+//    console.log(obj4)
    
+   //Accessing object property from array of multiple objects
+   let ppl2 = [
+       stud1 = {
+           name: 'John',
+           age: 34,
+       },
+       stud2 = {
+           name: 'John',
+           age: 324,
+       },
+       stud3 = {
+           name: 'John',
+           age: 4,
+       }
+]
+console.log(ppl2[2].age)
+
 
 const introducer = (name,age) => {
     const person = {
