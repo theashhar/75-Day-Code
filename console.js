@@ -165,6 +165,13 @@
        }
 ]
 console.log(ppl2[2].age)
+console.log(ppl2.length)
+
+//JSON FILE
+// {
+//     "name":"jhon",
+
+// }
 
 
 const introducer = (name,age) => {
