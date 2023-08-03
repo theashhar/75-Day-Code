@@ -1,0 +1,76 @@
+* {
+    font-family:   'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(94, 33, 168);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    padding-top: 20px;
+
+}
+.centerbox {
+    height: 90vh;
+    width: 28%;
+    background-color: rgb(13, 2, 50);
+    border: 1px solid;
+    padding: 0 20px 0 20px;
+    border-radius: 30px;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly ;
+        align-items: space-around;
+        /* flex-wrap: wrap;
+            align-content: space-evenly; */
+    /* box-shadow: 10px 10px #000000 .7; */
+    filter: drop-shadow(0px 0px 8px rgb(39, 34, 43) );
+
+    @media  (max-width:1200px){
+    width: 50%;
+    }
+    @media  (max-width:600px){
+        width: 85%;
+        }
+}
+/* .textBox,*/ input { 
+    height: 4vh;
+    width: 80%;
+    background-color: rgb(52, 40, 92);
+    border: 1px solid rgb(52, 40, 92);
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    color: aliceblue
+}
+.centerbox h2, span, p{
+    color: aliceblue;
+    margin: 6px;
+}
+span{
+    padding: 5px;
+}
+.minusPlusBtn {
+    height: 4vh;
+    width: 4vh;
+    background-color: rgb(52, 40, 92);
+    border: 1px solid rgb(52, 40, 92);
+    /* padding: 0 20px 0 20px;   */
+    border-radius: 50%;
+    color: aliceblue;
+
+    
+}
+.counterBtn {
+    display: flex;
+        align-items: center;
+
+}
+.peoplecontainer {
+    display: flex;
+        justify-content: space-between;
+}
+.finalAmt {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
