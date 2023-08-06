@@ -8,39 +8,57 @@ const calculateBtnElement = document.getElementById('calculateBtn')
 
 //Functions
 
-const billInput = () => {
-    // console.log(noOfPeople)
-    // console.log(billInputElement.value)
 
-}
-const tipInput = () => {
-    // console.log(noOfPeople)
 
-}
-// const noOfPeopleDiv = () => {
-//     return null
-// }
-const perPersonTotal = () => {
-    
-}
-decreasePeople = () => {
-    minusBtnElement.onclick = () => {
+decreasePeople = () => {    
         if (noOfPeopleDivElement.innerText > 1)
         noOfPeopleDivElement.innerText--
-    }
+        calculateBill()
 }
-increasePeople = () => {
-    plusBtnElement.onclick = () => {
+increasePeople = () => {    
         noOfPeopleDivElement.innerText++
-    }
+        calculateBill()   
 }
 const calculateBill = () => {
-    calculateBtnElement.onclick = () {
-    const finalOutput = Number((tipInputElement.value/100)*billInputElement.value)/noOfPeopleDivElement.innerText
-    }
+    
+        let finalOutput = (Number((Number(billInputElement.value) + (Number(tipInputElement.value) * 
+        Number(billInputElement.value)/100))/noOfPeopleDivElement.innerText)).toFixed(2)
+        
+    // console.log(finalOutput)
+//     perPersonTotalElement.innerText = finalOutput
     return finalOutput
-
 }
+changePerPerson = () => {
+    perPersonTotalElement.innerText = calculateBill()
+}
+
+
+// const perPersonTotal = () => {
+    
+// }
+
+// const billInput = () => {
+//     // console.log(noOfPeople)
+//     return billInputElement.value
+//     // console.log(x)
+
+// }
+// const tipInput = () => {
+//     // console.log(noOfPeople)
+
+// }
+// // const noOfPeopleDiv = () => {
+// //     return null
+// // }
+// const calculateBill = () => {
+//     calculateBtnElement.onclick = () => {
+//         let x = Number(billInput()*2)
+//     // const finalOutput = Number((tipInputElement.value/100)*billInputElement.value)/noOfPeopleDivElement.innerText
+//     console.log(x)
+//     }
+//     return finalOutput
+
+// }
 
 // let noOfPeople = Number(noOfPeopleDiv.innerText)
 // console.log(calculateBill)

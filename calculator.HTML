@@ -10,11 +10,11 @@
     <div class="centerbox">
         <div class="insidecontainer">
             <h2>Bill Total</h2>
-            <input onkeyup="billInput()"  id="billInput" type="text" name="name" placeholder="$" value="">
+            <input onkeyup="calculateBill()"  id="billInput" type="text" name="name" placeholder="$" value="">
         </div>        
         <div class="insidecontainer">
             <h2>Tip %</h2>
-            <input onkeyup="tipInput()" id="tipInput" class="textBox" type="text" name="name" placeholder="%">
+            <input onkeyup="calculateBill()" id="tipInput" class="textBox" type="text" name="name" placeholder="%">
         </div>        
         <div class="peoplecontainer">
             <div class="people">
@@ -31,7 +31,7 @@
             </div>  
             
         </div>
-        <div class="calculateBtnDiv"><button class="calculateBtn" calculateBtn><h2>Calculate</h2></button></div>
+        <div class="calculateBtnDiv"><button onclick="changePerPerson()" class="calculateBtn" calculateBtn><h2>Calculate</h2></button></div>
     </div>
     <script src="/CWH_course/CalculatorJS.js"></script>
 </body>
