@@ -37,28 +37,7 @@ changePerPerson = () => {
     
 // }
 
-// const billInput = () => {
-//     // console.log(noOfPeople)
-//     return billInputElement.value
-//     // console.log(x)
 
-// }
-// const tipInput = () => {
-//     // console.log(noOfPeople)
-
-// }
-// // const noOfPeopleDiv = () => {
-// //     return null
-// // }
-// const calculateBill = () => {
-//     calculateBtnElement.onclick = () => {
-//         let x = Number(billInput()*2)
-//     // const finalOutput = Number((tipInputElement.value/100)*billInputElement.value)/noOfPeopleDivElement.innerText
-//     console.log(x)
-//     }
-//     return finalOutput
-
-// }
 
 // let noOfPeople = Number(noOfPeopleDiv.innerText)
 // console.log(calculateBill)
