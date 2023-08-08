@@ -31,3 +31,27 @@ body {
         width: 85%;
         }
     }
+    .insidecontainer {
+        display:flex;
+            justify-content: center;
+            align-items: center;
+        gap: 20px;
+    }
+    .blocks {
+        height: 100%;
+        width: 25%;
+        background-color: rgb(80, 58, 83);
+        display:flex;
+            justify-content: center;
+            align-items: center;
+        border-radius: 10px;
+    }
+    .stopBtn {
+        height: 15%;
+        width: 15%;
+        background-color: rgb(80, 58, 83);
+        display:flex;
+            justify-content: center;
+            align-items: center;
+        border-radius: 10px;
+    }
