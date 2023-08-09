@@ -164,8 +164,8 @@
            age: 4,
        }
 ]
-console.log(ppl2[2].age)
-console.log(ppl2.length)
+// console.log(ppl2[2].age)
+// console.log(ppl2.length)
 
 //JSON FILE
 // {
@@ -404,7 +404,7 @@ squares.forEach(square => {
 
 
 compOutput = Math.ceil(Math.random() * 3)
-    // console.log(compOutput)
+    console.log(compOutput)
 
 // if (compOutput == 1) {
 //     console.log("Rock")
@@ -424,3 +424,11 @@ compOutput = Math.ceil(Math.random() * 3)
 // else {
 //     console.log("scissor")
 // }
+
+const randomFruit = (fruit) => {
+    const RandNo = Math.ceil(Math.random() * fruit.length)
+    return fruit[RandNo]
+}
+Arr = ['✌️','✌️', '✋', '✊']
+x = randomFruit(Arr)
+console.log(x)
