@@ -7,9 +7,6 @@ const plusBtnElement = document.getElementById('plusBtn')
 const calculateBtnElement = document.getElementById('calculateBtn')
 
 //Functions
-
-
-
 decreasePeople = () => {    
         if (noOfPeopleDivElement.innerText > 1)
         noOfPeopleDivElement.innerText--
@@ -20,24 +17,10 @@ increasePeople = () => {
         calculateBill()   
 }
 const calculateBill = () => {
-    
-        let finalOutput = (Number((Number(billInputElement.value) + (Number(tipInputElement.value) * 
+       let finalOutput = (Number((Number(billInputElement.value) + (Number(tipInputElement.value) * 
         Number(billInputElement.value)/100))/noOfPeopleDivElement.innerText)).toFixed(2)
-        
-    // console.log(finalOutput)
-//     perPersonTotalElement.innerText = finalOutput
     return finalOutput
 }
 changePerPerson = () => {
     perPersonTotalElement.innerText = calculateBill()
 }
-
-
-// const perPersonTotal = () => {
-    
-// }
-
-
-
-// let noOfPeople = Number(noOfPeopleDiv.innerText)
-// console.log(calculateBill)

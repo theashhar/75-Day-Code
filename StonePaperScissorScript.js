@@ -5,6 +5,10 @@ const CompOutputElement = document.getElementById('CompOutput')
 const resultTextElement = document.getElementById('resultText')
 const stopGameElement = document.getElementById('stopGame')
 
+// Call playGame when the page loads
+window.onload = function () {
+    playGame();
+};
 
 // returns random option from three -> stone paper scissor
 function compGenerate () {
@@ -14,31 +18,54 @@ function compGenerate () {
     return ArrayOptions[RandNo]  
 }
 
-//returns value of sps blocks from html to using onClickSps fn
+//returns value of sps blocks from html by using onClickSps fn
+//problem this this function => onclick event handler is called here and and also in the html file. to fix that window.onload is used 
 function playGame() {
     const spsBtnElement = document.querySelectorAll('.blocks')
     spsBtnElement.forEach(button => {
         button.onclick = () => {onClickSps(button.value)}  
     })
+    
+}
+function getscore() {
 
 }
+
+let count = 0
+// let totalScore = 0
 
 function onClickSps(userChoice)  {
  console.log({userChoice})
  const computerChoice = compGenerate()
  console.log({computerChoice})
- const score = getResult(userChoice, computerChoice)
- console.log({score})
+
+ //Score
+    const score = getResult(userChoice, computerChoice)
+    console.log(score)
+    const scoreElement = document.getElementById('score')
+    scoreElement.innerText = ` ${score}`
+
+ // number of matches => 
+    count++
+    console.log(`count = ${count} `)
+    counterElement = document.getElementById('counter')
+    counterElement.innerText =` ${count}` 
+
+
 }
 
+// main stone paper scissor logic return
 function getResult(user, computer)  {
     let score
-    if (user == 'stone' && computer == '✋') {
+    if (user == 'scissor' && computer == '✋') {
         score = 1
         resultTextElement.innerText = 'You Win'
     } else if (user == 'paper' && computer == '✌️') {
     score = -1
     resultTextElement.innerText = 'You Lost'
+    } else if (user == 'stone' && computer == '✌️') {
+    score = 1
+    resultTextElement.innerText = 'You Win'
     } else if (user == 'scissor' && computer == '✊') {
     score = -1
     resultTextElement.innerText = 'You Lost'
@@ -50,7 +77,7 @@ function getResult(user, computer)  {
     resultTextElement.innerText = 'You Win'
     } else {
     score = 0
-    let result = 'Draw'
+    resultTextElement.innerText = 'Draw'
     }
 return score
 } 

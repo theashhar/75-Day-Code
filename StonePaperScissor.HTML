@@ -9,12 +9,16 @@
 <body>
     <div class="centerbox">
         <div class="insidecontainer">
-            <button class="blocks" onclick="compGenerate(), playGame()" value="stone" ><h1 value="stone" id="stone" >✊</h1></button>
-            <button class="blocks" onclick="compGenerate(), playGame()" value="paper" ><h1 value="paper" id="paper" >✋</h1></button>
-            <button class="blocks" onclick="compGenerate(), playGame()" value="scissor" ><h1 value="scissor" id="scissor" >✌️</h1></button>
+            <button class="blocks" onclick="playGame()" value="stone" ><h1 value="stone" id="stone" >✊</h1></button>
+            <button class="blocks" onclick="playGame()" value="paper" ><h1 value="paper" id="paper" >✋</h1></button>
+            <button class="blocks" onclick="playGame()" value="scissor" ><h1 value="scissor" id="scissor" >✌️</h1></button>
         </div>
         <div class="CompOutput" ><h1 id="CompOutput">✊</h1><img src="computerIcon.svg" id="compIcon"></div>
-        <div class="resultText" id="resultText"><h1>You Won</h1></div>
+        <div class="resultText" ><h1 id="resultText">Play!</h1></div>
+        <div class="resultText2" >
+            Total Matches:<span id="counter"> 0</span>
+            Your Score:<span id="score"> 0</span>
+        </div>
         <div class="stopBtn" id="stopGame" onclick="stopGame()"><h1>🔴</h1></div>
     </div>
     <script src="/CWH_course/StonePaperScissorScript.js"></script>

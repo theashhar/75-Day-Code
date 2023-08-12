@@ -45,7 +45,7 @@ body {
             justify-content: center;
             align-items: center;
         border-radius: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         cursor:pointer;
             user-select: none;
     }
@@ -68,3 +68,15 @@ body {
         right: 10px;
         width: 16px;
     }
+    .resultText {
+        color: aliceblue;
+        margin-bottom: -15px;
+    }
+    .resultText2 {
+        color: aliceblue;
+        margin-bottom: 40px;
+    }
+    #counter {
+        padding-right: 10px;
+    }
+
