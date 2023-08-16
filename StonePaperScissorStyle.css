@@ -51,7 +51,7 @@ body {
         width: 90px;
         background-color: rgb(80, 58, 83);
         display:flex;
-            justify7-content: center;
+            justify-content: center;
             align-items: center;
         border-radius: 25px;
         user-select: none;
