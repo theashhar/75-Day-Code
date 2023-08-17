@@ -1,5 +1,5 @@
 // fetch("https://api.thecatapi.com/v1/images/search")
-const imageDogElement = document.getElementById('imageDog')
+const imageDogElement = document.getElementById('image')
 const generateButtonElement = document.getElementById('generateButton')
 const searchHeroElement = document.getElementById('searchHero')
 const searchBtnElement = document.getElementById('searchBtn')
@@ -13,7 +13,7 @@ const generateHero = (id) => {
     .then(json => {
         console.log(json.powerstats.intelligence)
         heroNameElement.innerText = (json.name) 
-        imageDogElement.innerHTML = `<img src='${json.image.url}' height='500px' />`
+        imageDogElement.innerHTML = `<img src='${json.image.url}'  />`
     })
 }
 generateHero(216)

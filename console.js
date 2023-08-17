@@ -404,7 +404,7 @@ squares.forEach(square => {
 
 
 compOutput = Math.ceil(Math.random() * 3)
-    console.log(compOutput)
+    // console.log(compOutput)
 
 // if (compOutput == 1) {
 //     console.log("Rock")
@@ -431,4 +431,29 @@ const randomFruit = (fruit) => {
 }
 Arr = ['✌️','✌️', '✋', '✊']
 x = randomFruit(Arr)
-console.log(x)
+// console.log(x)
+
+//setTime out  takes a function and runce it after a wait time
+// setTimeout (() => console.log('Print after 1s'), 1000)
+
+
+// Ternary Operators || .catch .then 
+const promise1 = new Promise((resolve, reject) => {
+setTimeout(() => {
+            isReady = false
+            // Ternary Operators
+            isReady ? resolve("yes"): reject("No")
+        }, 2000  
+    )
+})
+console.log(
+    promise1
+    .then(val => console.log(val))
+    .catch(val => console.log(val))
+)
+
+// console.log(
+//     promise1
+//     .then(console.log({success}))
+//     .catch(console.log({error}))
+// )

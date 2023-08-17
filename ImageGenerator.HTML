@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ImageGeneratorStyle.css">
     <title>Image Generator</title>
 </head>
 <body>
-    <h1>Hi</h1>
-    <input id="searchHero" value="" placeholder="Enter Hero's Name" type="text" onkeydown="if (event.key === 'Enter' || event.key === 13) { searchHero(); }">
-    <button id="searchBtn" onclick="searchHero()" >Search</button>
-    <button id="generateButton">Generate Random Hero</button>
-    <h1 id="heroName">  </h1>
-    <div id="imageDog"><img src="" alt="not available" ></div>
+    <div class="container">
+        <!-- <h1>Hi</h1> -->
+        <input style="color:rgb(25, 22, 33);"  id="searchHero" value="" placeholder="Enter Hero's Name" type="text" onkeydown="if (event.key === 'Enter' || event.key === 13) { searchHero(); }">
+        <button id="searchBtn" onclick="searchHero()" >Search</button>
+        <button id="generateButton">Generate Random Hero</button>
+        <h1 id="heroName" >  </h1>
+        <div id="image" ><img src="" alt="not available" ></div>
+    </div>
     <script src="/CWH_course/ImageGeneratorJS.js"></script>
     
 </body>
