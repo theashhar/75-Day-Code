@@ -435,14 +435,13 @@ x = randomFruit(Arr)
 
 //setTime out  takes a function and runce it after a wait time
 // setTimeout (() => console.log('Print after 1s'), 1000)
-
-
-// Ternary Operators || .catch .then 
+ 
 const promise1 = new Promise((resolve, reject) => {
 setTimeout(() => {
-            isReady = false
+            isReadyArr = [false, true]
+            isReadyNo = Number(Math.floor(Math.random() * 2))
             // Ternary Operators
-            isReady ? resolve("yes"): reject("No")
+            isReadyArr[isReadyNo] ? resolve("Success ✅"): reject("No")
         }, 2000  
     )
 })
@@ -451,9 +450,3 @@ console.log(
     .then(val => console.log(val))
     .catch(val => console.log(val))
 )
-
-// console.log(
-//     promise1
-//     .then(console.log({success}))
-//     .catch(console.log({error}))
-// )

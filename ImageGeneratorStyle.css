@@ -10,8 +10,8 @@ body {
         align-items: center;
 }
 .container {
-    height: 85vh;
-    width: 45%;
+    height: 600px;
+    width: 600px;
     background-color: rgb(90, 7, 7);
     padding: 20px 20px 10px 20px;
     border-radius: 30px;
@@ -28,7 +28,7 @@ body {
         width: 65%;
         }
         @media  (max-width:600px){
-            width: 70%;
+            width: 85%;
             }
         
 }
