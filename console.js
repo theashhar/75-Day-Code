@@ -13,9 +13,6 @@
     // //Operator
     // //food = 55 
 
-
-
-   
     // foodBill=Number(prompt('food bill?'))
     // TipPercent=(prompt('Tip%?')/100)
     // Tip=TipPercent*foodBill
@@ -431,22 +428,77 @@ const randomFruit = (fruit) => {
 }
 Arr = ['✌️','✌️', '✋', '✊']
 x = randomFruit(Arr)
+
+//CLOSURES
 // console.log(x)
 
 //setTime out  takes a function and runce it after a wait time
 // setTimeout (() => console.log('Print after 1s'), 1000)
- 
+
+function print1to5() {
+    for(var i=1; i<=5; i++) //changing var->let prints the desired output
+    setTimeout(function () {
+        console.log(i)
+    }, i*300
+    )   
+}
+// print1to5()
+
+function print1to5var() {
+    for(var i=1; i<=5; i++){ 
+    function inner(t){
+    setTimeout(function () {
+        console.log(t)
+            }, i*300
+        )   
+    }
+    inner(i)
+}}
+// print1to5var()
+
+function outer1(){
+    let a=1
+    function inner1(){
+        function inner2(){
+            console.log(a)
+        }
+        return inner2  
+    }
+    return inner1
+}
+// parentheses calls inner functions
+// outer1()()() 
+
+function outer1(){
+    let a=1
+    return a
+
+}
+outer1()
+
+
+
 const promise1 = new Promise((resolve, reject) => {
 setTimeout(() => {
             isReadyArr = [false, true]
             isReadyNo = Number(Math.floor(Math.random() * 2))
             // Ternary Operators
             isReadyArr[isReadyNo] ? resolve("Success ✅"): reject("No")
-        }, 2000  
+        }, 1000  
     )
 })
-console.log(
+promiseorint =
     promise1
     .then(val => console.log(val))
     .catch(val => console.log(val))
-)
+
+// console.log(promiseorint)
+
+//ASYNC & AWAIT
+//ASYNC -> whenever you're speaking to some database/website/APIs, you shall use async function
+
+const dogApi = async () => {
+    const url = "https://api.thecatapi.com/v1/images/search"
+    const response = await fetch(url)
+    const data = await response.json()
+}
