@@ -484,21 +484,64 @@ setTimeout(() => {
             isReadyNo = Number(Math.floor(Math.random() * 2))
             // Ternary Operators
             isReadyArr[isReadyNo] ? resolve("Success ✅"): reject("No")
-        }, 1000  
-    )
+        }, 400);
 })
-promiseorint =
-    promise1
-    .then(val => console.log(val))
-    .catch(val => console.log(val))
-
-// console.log(promiseorint)
-
-//ASYNC & AWAIT
-//ASYNC -> whenever you're speaking to some database/website/APIs, you shall use async function
-
-const dogApi = async () => {
-    const url = "https://api.thecatapi.com/v1/images/search"
-    const response = await fetch(url)
-    const data = await response.json()
+// promisePrint =
+//     promise1
+//     .then(val => console.log(val))
+//     .catch(val => console.log(val))
+    
+const promisePrint2 = async () => {
+    const response = await (promise1)  
+    console.log(response)
+    //if we leave till here it dosent catch reject part
 }
+//Try Catch Method
+const promisePrint3 = async () => {
+    try {//everything resolved goes here
+        const response = await (promise1)  
+        console.log(response)
+    } catch(error) { //everything rejected goes here
+        console.log(error)
+    }
+
+}
+const promisePrint4 = async () => {
+    const data = {
+        rating : null,
+        tip: null,
+        pay: null,
+        review: null
+    };
+    
+       try {
+        const response = await promise1;
+        console.log(response);
+        data.rating = 5;
+        data.tip = "10%";
+        data.pay = 100;
+        data.review = 5;
+
+    } catch (error) {
+        console.log(error);
+        data.rating = 1;
+        data.tip = "0%";
+        data.pay = 100;
+        data.review = 1;
+    }
+
+    return data;
+};
+(async () => {
+    const result = await promisePrint4();
+    console.log(result);
+})();
+
+//ASYNC / AWAIT
+//ASYNC -> whenever you're speaking to some database/website/APIs, you shall use async function
+//Better tna .then, .catch syntaxes
+// const dogApi = async () => {
+//     const url = "https://api.thecatapi.com/v1/images/search"
+//     const response = await fetch(url)
+//     const data = await response.json()
+// }
