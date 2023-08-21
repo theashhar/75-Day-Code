@@ -534,14 +534,33 @@ const promisePrint4 = async () => {
 };
 (async () => {
     const result = await promisePrint4();
-    console.log(result);
+    // console.log(result);
 })();
 
 //ASYNC / AWAIT
 //ASYNC -> whenever you're speaking to some database/website/APIs, you shall use async function
 //Better tna .then, .catch syntaxes
-// const dogApi = async () => {
+// const weatherApi = async () => {
 //     const url = "https://api.thecatapi.com/v1/images/search"
 //     const response = await fetch(url)
 //     const data = await response.json()
 // }
+
+const url2 = 'https://open-weather13.p.rapidapi.com/city/landon';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '858689371bmshf8643ba1691968dp16c6afjsn01257654bc2a',
+		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+	}
+};
+const weather1 = async () => {
+
+try {
+	const response = await fetch(url2, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+}
