@@ -7,7 +7,6 @@ const options = {
 	}
 };
 const weather1 = async () => {
-
 try {
 	const response = await fetch(url2, options);
 	const result = await response.text();
@@ -16,3 +15,8 @@ try {
 	console.error(error);
 }
 }
+
+(async () => {
+	await weather1()
+
+})()
