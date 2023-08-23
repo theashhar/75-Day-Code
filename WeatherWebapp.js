@@ -6,17 +6,16 @@ const options = {
 		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
 	}
 };
-const weather1 = async () => {
-try {
-	const response = await fetch(url2, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
-}
+// const weather1 = async () => {
+// try {
+// 	const response = await fetch(url2, options);
+// 	const result = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+// }
 
-(async () => {
-	await weather1()
-
-})()
+// (async () => {
+// 	await weather1()
+// })()

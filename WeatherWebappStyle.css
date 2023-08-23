@@ -1,23 +1,101 @@
 * {
     font-family:   'Trebuchet MS', sans-serif;
 }
+h1 {
+    font-size: 160px;
+    margin: 0;  
+}
+h2 {
+    font-size: 78px;
+    margin: -10px;
+    padding: 0;
+}
+p {
+    font-size: 20px;
+    margin: 0;
+}
 body {
     background-image: url("/CWH_course/Resourses/rainImage2.png");
-    background-repeat: no-repeat;
-    background-size: 1600px 900px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     color: aliceblue;
     display: flex;
+    overflow: hidden;
 }
+
+    .degreeDiv {
+        width: 46%;
+        position: absolute;
+            left: 7%;
+            bottom: 15%;
+        display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            /* gap: 80px; */
+        /* margin: 10px 15px 10px 10px; */
+
+
+}
+        .locationDate, .weatherMain {
+            display: flex;
+                flex-direction: column;
+}
+        #weatherIcon {
+            margin-bottom: 8px;
+            width: 60px;
+        }
+            .date {
+                display: flex;
+                    justify-content: space-evenly;
+                    /* align-items: flex-start; */
+                    /* gap: 15px; */
+}
+
 .rightBlock {
     position: absolute;
         right: 0;
         top: 0;
     height: 100vh;
-    width: 75vh;
-    background-color: rgb(30, 37, 37);
+    width: 24%;
+    background-color: rgb(0, 0, 0);
     filter: drop-shadow(0px 0px 15px rgb(24, 28, 28) );
-    backdrop-filter: sepia(90%);
-    opacity: 0.8;
-    /* filter: blur(200px);
-    color: black; */
+    -webkit-backdrop-filter: (40px);
+    backdrop-filter: (40px);
+    opacity: 0.5;
+    padding: 0 140px 0 80px;
+    
+
+    /* filter: blur(20px); */
+    /* color: black; */
 }
+    .searchBtn {
+        position: absolute;
+            top: 0;
+            right: 0;
+        margin-bottom: 8px;
+        width: 12%;
+        background-color: antiquewhite;
+    }
+    .locationSearch{
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        margin-top: 10px;
+    }
+        .line {
+            width: 100%;
+        }
+
+    input {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        width: 70%;
+        padding: 10px;
+        font-size: 150%;
+    }  
+
+
+    
