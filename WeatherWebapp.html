@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="WeatherWebappStyle.css">
     <title>Weather App</title>
 </head>
+<!-- <body style="background-image: url('/CWH_course/Resourses/rainImage2.png')"> -->
 <body>
     <div class="leftBlock">
         <h3>theAshhar.weather</h3>
@@ -17,7 +18,7 @@
                 <div class="date">
                     <p id="date">08:20</p>
                     <!-- <p>Sunday, <span>6 Aug</span> </p> -->
-                    <p id="region">West Bengal</p>
+                    <p id="region"> West Bengal</p>
                     
                 </div>
             </div>
@@ -28,13 +29,32 @@
         </div>
     </div>
     <div class="rightBlock">
+        <button class="searchBtn" onkeydown="if(event.key === 13 || event.key === 'Enter') {getWeatherData();}"><img src="Resourses/search-icon.svg" ></button>
+
         <div class="locationSearch">
             <input id="searchCity" placeholder="Search City" value="" type="text" onkeydown="if(event.key === 13 || event.key === 'Enter') {getWeatherData();}"> 
-            <hr class="line">
-            <hr class="line2">
-
+            <hr class="line">            
         </div>
-        <button class="searchBtn" onkeydown="if(event.key === 13 || event.key === 'Enter') {getWeatherData();}"><img src="Resourses/search-icon.svg" ></button>
+        <div class="weatherDetails">
+            <hr class="line2">
+            <h3>Details</h3>
+            <div class="weatherDetailsDiv">
+                <div class="detailsInsideLeft">  
+                    <p>Humidity</p>
+                    <p>Wind Speed</p>
+                    <p>Wind Direction</p>
+                    <p>Pressure</p2>
+                </div>
+                <div class="detailsInsideRight">  
+                    <p id="humidity"></p>
+                    <p id="windSpeed"></p>
+                    <p id="windDir"></p2>
+                    <p id="pressure"></p2>
+                </div>
+            </div>
+        </div>
+        <hr class="line3">
+
     </div>
     <!-- <span>Powered by <a href="https://www.weatherapi.com/" title="Weather API"> WeatherAPI.com</a></span> -->
     <script src="/CWH_course/WeatherWebapp.js"></script>
