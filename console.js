@@ -533,7 +533,7 @@ const promisePrint4 = async () => {
     return data;
 };
 (async () => {
-    const result = await promisePrint4();
+    // const result = await promisePrint4();
     // console.log(result);
 })();
 
@@ -564,3 +564,25 @@ try {
 	console.error(error);
 }
 }
+
+
+
+//CLASSES 
+class User {
+    constructor(name, email, pass){
+        this.name = name;
+        this.email = email;
+        this.pass = pass;
+    }
+    encryptPass(){
+        return `${this.pass}.asx`
+    }
+    capitaliseName(){
+        return `${this.name.toUpperCase()}`
+    }
+}
+
+const Ashhar = new User("Ashhar", "ashhar@gmail.com", "payhas12")
+
+console.log(Ashhar.capitaliseName())
+

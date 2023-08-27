@@ -27,7 +27,7 @@ p {
     margin: 0;
 }
 body {
-    background-image: url("/CWH_course/Resourses/rainImage1.png");
+    background-image: url("/CWH_course/Resourses/rainImage2.png");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -44,7 +44,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/CWH_course/Resourses/rainImage1.png');
+    background-image: url('/CWH_course/Resourses/rainImage2.png');
     background-size: cover;
     filter: blur(3px);
     z-index: -1;    
