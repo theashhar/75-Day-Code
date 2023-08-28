@@ -581,8 +581,48 @@ class User {
         return `${this.name.toUpperCase()}`
     }
 }
-
 const Ashhar = new User("Ashhar", "ashhar@gmail.com", "payhas12")
+// console.log(Ashhar.capitaliseName())
 
-console.log(Ashhar.capitaliseName())
 
+
+class Car {
+    constructor(name, color, speed) {
+    this.name = name;
+    this.color = color;
+    this.speed = speed;
+    }
+    drive() {
+        this.speed += 10
+        // console.log(`speed increased to ${this.speed}`)
+    }
+}
+ const lambo = new Car("lambo", "brown", 350)
+//  console.log(lambo.drive())
+lambo.drive()
+lambo.drive()
+lambo.drive()
+//  console.log(lambo.speed)
+
+ x=[1,3 ,4]
+ x[4]= null
+ x[5]= 'apple'
+ x .push('assas')
+//  console.log(x)
+
+ //Array.prototype this allows to get access it array class
+ //adding own methods
+ Array.prototype.myPush = function(item){
+    this[this.length] = item
+    return this  
+ }
+
+ const fruits = ['apple', 'car', 'guava', 'sos']
+ fruits.myPush('orange')
+ fruits.push('coconut', 'brinjal')
+ fruits.myPush("banana")
+ 
+ console.log(fruits)
+
+ //Bank Class
+ // Methods -> withdraw(), deposit(), showBdalance()
