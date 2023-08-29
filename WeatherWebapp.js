@@ -43,13 +43,14 @@ const searchCity = async () => {
 const getWeatherData = async () => {
 	degree = await searchCity()
 	console.log(degree)
-	degreeElement.innerText = `${Math.ceil(degree.current.temp_c)}°`
+	degreeElement.textContent = `${Math.ceil(degree.current.temp_c)}`
+	// degreeElement.innerHTML = `<h1> ${Math.ceil(degree.current.temp_c)}<span>°</span><h1/>`
 	conditionTextElement.innerText = degree.current.condition.text
 	weatherLocationElement.innerText = (degree.location.name)
 	if (degree.location.name === degree.location.region || degree.location.region == '')
-	region = `| ${degree.location.country}`
+	region = ` ${degree.location.country}`
 	else
-	region  =  `| ${degree.location.region}`
+	region  =  ` ${degree.location.region}`
 	regionElement.innerText = region
 	dateElement.innerText = `${degree.location.localtime} `
 	weatherIconElement.src = degree.current.condition.icon

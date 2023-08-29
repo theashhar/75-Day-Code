@@ -625,4 +625,4 @@ lambo.drive()
  console.log(fruits)
 
  //Bank Class
- // Methods -> withdraw(), deposit(), showBdalance()
+ // Methods -> withdraw(), deposit(), showBalance()

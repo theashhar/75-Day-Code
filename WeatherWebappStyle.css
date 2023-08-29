@@ -35,8 +35,12 @@ body {
     display: flex;
     overflow: hidden;
     background-attachment: fixed;
+    overflow: hidden;
+
+
 
 }
+/* to blur 
 body::before {
     content: "";
     position: absolute;
@@ -48,7 +52,7 @@ body::before {
     background-size: cover;
     filter: blur(3px);
     z-index: -1;    
-  }
+  } */
 
     .degreeDiv {
         width: 57%;
@@ -56,11 +60,10 @@ body::before {
             left: 5%;
             bottom: 15%;
         display: flex;
-            justify-content: space-between;
+        justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
             /* gap: 80px; */
-        /* margin: 10px 15px 10px 10px; */
 
 
 }
@@ -110,9 +113,7 @@ body::before {
     display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-    /* filter: blur(20px); */
-    /* color: black; */
+        
 }
     .searchBtn {
         position: absolute;
@@ -172,4 +173,94 @@ body::before {
         .weatherDetails h3 {
            font-size: 35px;
         }
- 
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .leftBlock {
+        width: 100%;
+    }
+    .degreeDiv {
+        width: 100%; 
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        margin: auto;
+        position: static;
+        /* left: 5%;
+        bottom: 15%; */
+        margin: 40px 0 0 0;
+
+
+    }
+    .rightBlock {
+        position: static;
+/* display: none; */
+    height: 60vh;
+    width: 32%;  
+    border-radius: 20px;
+    margin: 40px 0 80px 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+    .degree{
+        position: absolute;        
+    }
+    .degreeSpan {
+        position: relative;
+        top: 20px;
+    }
+    .date{
+        width: 120%;
+    }
+    .theAshhar {
+        /* font-size: xx-small; */
+        /* height: 50px; */
+        width: 100%; 
+        position: fixed ;
+            bottom: 10px;
+        display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            /* z-index: 2; */
+            overflow: hidden;
+    }
+    .weatherDetailsDiv {
+        width: 150%;
+    }
+    .searchBtn {
+        position: absolute;
+            top: 15px;
+            right: 40px;
+        margin-bottom: 8px;
+        width: 15%;
+        border-radius: 10px;
+    }
+    p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .line2, .line3 {
+        width:150% ;
+    }
+    #powered{
+        font-size: 6px;
+        padding-top: 4px;
+    }
+    #theAshhar {
+        font-size: 9px;
+    }
+    }
