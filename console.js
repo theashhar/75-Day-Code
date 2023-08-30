@@ -622,7 +622,54 @@ lambo.drive()
  fruits.push('coconut', 'brinjal')
  fruits.myPush("banana")
  
- console.log(fruits)
+//  console.log(fruits)
 
  //Bank Class
  // Methods -> withdraw(), deposit(), showBalance()
+
+class Bank{
+    constructor(balance) {
+        this.balance = balance;
+    }
+    withdraw(amt) {
+        if (amt > this.balance)
+        console.log("🔴 cant' withdraw")         
+        else 
+        {
+        this.balance -= amt;
+        // console.log(`Rs ${amt} Debited`)
+    }
+    }
+    depostit(amt) {
+        this.balance += amt;
+        // console.log(`Rs ${amt} Credited`)
+    }
+    showBalance() {
+        console.log(`Total Balance = Rs ${this.balance}`)
+        // console.log(balance: this.balance)
+    }
+}
+
+const myAccount = new Bank(100)
+myAccount.depostit(10)
+myAccount.withdraw(100)
+myAccount.withdraw(10)
+// myAccount.withdraw(10)
+// myAccount.withdraw(11)
+// myAccount.showBalance()
+
+//EVENT LISTENERS 
+let i=0
+document.addEventListener('keydown', function (e) {
+    if(e.key == 'q')
+    {    console.log('hi',i)
+        i++}
+    else {
+    document.getElementById('victory').play()
+    }
+})
+
+
+
+
+
