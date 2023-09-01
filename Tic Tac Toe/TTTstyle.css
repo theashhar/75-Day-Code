@@ -1,0 +1,62 @@
+/* *, *::after, *::before{
+    box-sizing: border-box;
+} */
+
+:root {
+    --cellSize: 120px;
+    --symbolSize: calc(var((--cellSize)*.9));
+}
+ body {
+    background-color: rgb(30, 30, 30); 
+    margin: 0;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    overflow: hidden;
+}
+ button {
+    
+ }
+ .board {
+    /* height: 100vh; */
+    width: 100vw;
+    display: grid;
+        justify-content: center;
+        align-items: center;
+    grid-template-columns: repeat(3, var(--cellSize));
+    gap: 5px;
+    margin-top: 50vh;
+    transform: translateY(-50%); 
+    margin-bottom: -90px;
+
+}
+ .cell {
+    height: var(--cellSize);
+    width: var(--cellSize);
+    background-color: rgb(220, 226, 232);    
+ }
+ .cell.a, .cell.e {
+    background-color: yellow;   
+ }
+ .winningMsg {
+    /* display: flex; */
+ }
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    width: 320px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 50vh; /* Center vertically by using 50% of the viewport height as top margin */
+    transform: translateY(-50%); /* Adjust vertically */
+  }
+  
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue; /* Optional: Add a background color for the squares */
+  }
+  
