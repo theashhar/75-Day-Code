@@ -43,7 +43,7 @@ const searchCity = async () => {
 const getWeatherData = async () => {
 	degree = await searchCity()
 	console.log(degree)
-	degreeElement.textContent = `${Math.ceil(degree.current.temp_c)}°`
+	degreeElement.textContent = `${Math.ceil(degree.current.temp_c)}`
 	// degreeElement.innerHTML = `<h1> ${Math.ceil(degree.current.temp_c)}<span>°</span><h1/>`
 	conditionTextElement.innerText = degree.current.condition.text
 	weatherLocationElement.innerText = (degree.location.name)
