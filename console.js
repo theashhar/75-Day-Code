@@ -312,6 +312,46 @@ const double = (number) => {
 }
 // console.log(double([1, 4 ,12]))
 
+
+// HIGHER ORDER FUNCTIONS
+//  num65 = 9
+ function salary (num65) {
+    return num65 * 2
+ }
+ const ar3 = [1, 2, 3, 4, 5]
+ //to double even 
+const evenDoubled = ar3.filter((number) => number % 2 === 0 ).map((number) => number = number * 2 )
+
+//  function doubleTheEvenNo (num) {
+//     return ar3.map( num => (
+//         ar3.filter( n => n % 2 === 0) * 2
+//     )
+//    )
+//  }
+//  console.log(doubleTheEvenNo([1, 2, 3, 4, 5]))
+//  console.log(evenDoubled)
+//  function customForEach(arr, callback) {
+//     for (let i = 0; i < arr.length; i++) {
+//       callback(arr[i], i, arr);
+//     }
+//   }
+  
+//   const numbers = [1, 2, 3, 4, 5];
+//   customForEach(numbers, (number) => console.log(number));
+
+const numbers1 = [1, 2, 3, 4, 5]; 
+function customForEach(array, callBack) {
+    for (i=0; i<array.length; i++) {
+        callBack(array[i])
+    }
+}
+
+customForEach(numbers1, (number) => console.log(number))
+
+// numbers1.forEach(element => {
+//     console.log(element)
+// })
+
 //MAP() FUNCTION
 
 const doubleMap = (number) => {
@@ -640,7 +680,7 @@ class Bank{
         // console.log(`Rs ${amt} Debited`)
     }
     }
-    depostit(amt) {
+    deposit(amt) {
         this.balance += amt;
         // console.log(`Rs ${amt} Credited`)
     }
@@ -651,7 +691,7 @@ class Bank{
 }
 
 const myAccount = new Bank(100)
-myAccount.depostit(10)
+myAccount.deposit(10)
 myAccount.withdraw(100)
 myAccount.withdraw(10)
 // myAccount.withdraw(10)
@@ -659,15 +699,15 @@ myAccount.withdraw(10)
 // myAccount.showBalance()
 
 //EVENT LISTENERS 
-let i=0
-document.addEventListener('keydown', function (e) {
-    if(e.key == 'q')
-    {    console.log('hi',i)
-        i++}
-    else {
-    document.getElementById('victory').play()
-    }
-})
+// let i=0
+// document.addEventListener('keydown', function (e) {
+//     if(e.key == '=')
+//     {    console.log('hi',i)
+//         i++}
+//     else {
+//     document.getElementById('victory').play()
+//     }
+// })
 
 
 

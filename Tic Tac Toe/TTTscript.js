@@ -8,7 +8,7 @@ WINNING_COMBINATIONS = [
 let circleTurn
 
 cellElements.forEach(cell => {
-    cell.addEventListener('click', cellClick, { once : true })
+    cell.addEventListener('click', cellClick, { twice : true })
 })
 setBoardHoverClass()
 
