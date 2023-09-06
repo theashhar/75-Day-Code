@@ -1,5 +1,7 @@
 const cellElements = document.querySelectorAll('[cellData]')
+const winningMsgTextElement = document.getElementById('winningMsgText')
 const boardElement = document.getElementById('board')
+const resetBtnElement = document.getElementById('resetBtn')
 const X_CLASS = 'x';
 const CIRCLE_CLASS = 'circle';
 WINNING_COMBINATIONS = [
@@ -7,21 +9,34 @@ WINNING_COMBINATIONS = [
 ]
 let circleTurn
 
-cellElements.forEach(cell => {
-    cell.addEventListener('click', cellClick, { twice : true })
-})
+resetBtnElement.addEventListener('click', startGame)
+
+startGame ()
+function startGame () {
+    winningMsgTextElement.innerText = ' '
+    
+    circleTurn = false
+    cellElements.forEach(cell => {
+        cell.classList.remove(X_CLASS)
+        cell.classList.remove(CIRCLE_CLASS)
+        cell.removeEventListener('click', cellClick)
+        cell.addEventListener('click', cellClick, { once : true })
+    })
 setBoardHoverClass()
+}
+
 
 function cellClick(e) {
-// place Mark
+
     const cell = e.target
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS 
     placeMark(cell, currentClass) //adds currentClass(x/circle) to e.target
-// Check for win
-    if (checkWin(currentClass))
-        console.log(`${currentClass} winner`)
-// check for Draw 
-// switch turns
+    if (checkWin(currentClass)){
+        endGame(false)
+    }
+    else if (isDraw()) {
+        endGame(true)
+    }
     switchTurns() 
     setBoardHoverClass()   
 }    
@@ -30,7 +45,7 @@ function placeMark(cell, currentClass) {
     cell.classList.add(currentClass)
 }
 function switchTurns() {
-    circleTurn = !circleTurn // sets to opposite
+    circleTurn = !circleTurn
 }
 function setBoardHoverClass() {
     boardElement.classList.remove(X_CLASS)
@@ -40,15 +55,37 @@ function setBoardHoverClass() {
     } else {
      boardElement.classList.add(X_CLASS)
    }
-//    console.log(boardElement.classList)
 }
 
 function checkWin (currentClass) {
-    const win = WINNING_COMBINATIONS.some(combination => {
+    return win = WINNING_COMBINATIONS.some(combination => {
         return combination.every(index => {
             return cellElements[index].classList.contains(currentClass)
         })
-    })
-    return win
+    }) 
 }
-// console.log(checkWin('x'))
+
+function endGame(draw) {
+    if (draw) {
+        winningMsgTextElement.innerText = 'Draw!'
+    }
+    else {
+        console.log(`${circleTurn ? 'O' : 'X'}-Wins!`)
+        winningMsgTextElement.innerText = `${circleTurn ? 'O' : 'X'}-Wins!`
+    }
+    
+}
+function isDraw() {
+    return [...cellElements].every(cell => { //destructuring it to make an array
+        return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS)
+    })
+}
+// resetBtnElement.addEventListener('click', reset)
+
+// function reset() {
+//     // winningMsgTextElement.innerText.remove('O-Wins!')
+    
+//     resetBtnElement.addEventListener('click', startGame)
+// }
+
+// console.log(cellElements.classList[0])

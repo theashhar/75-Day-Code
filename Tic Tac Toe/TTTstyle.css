@@ -29,9 +29,9 @@ a {
     color: aliceblue; */
     text-decoration: none;
 }
- button {
+ /* button {
     
- }
+ } */
  .board {
     /* height: 100vh; */
     width: 100vw;
@@ -103,7 +103,7 @@ a {
 
 .winningMsg {
     height: 50px;
-    width: 220px;
+    width: 300px;
     display: flex;
     flex-direction: column;
         justify-content: center;

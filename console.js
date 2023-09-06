@@ -347,7 +347,18 @@ function customForEach(array, callBack) {
 }
 
 customForEach(numbers1, (number) => console.log(number))
-
+const tasks = [
+    { title: 'Task 1', completed: true },
+    { title: 'Task 2', completed: false },
+    { title: 'Task 3', completed: true },
+  ];
+  
+  const atLeastOneIncomplete = tasks.some((task) => !task.completed);
+  const allCompleted = tasks.every((task) => task.completed);
+  
+  console.log(atLeastOneIncomplete); // Output: true
+  console.log(allCompleted); // Output: false
+  
 // numbers1.forEach(element => {
 //     console.log(element)
 // })
