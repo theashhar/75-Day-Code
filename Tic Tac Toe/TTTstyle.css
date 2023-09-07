@@ -42,7 +42,7 @@ a {
     gap: 5px;
     margin-top: 43vh;
     transform: translateY(-50%); 
-    margin-bottom: -70px;
+    margin-bottom: -110px;
  }
  .cell {
     position: relative;
@@ -109,6 +109,10 @@ a {
         justify-content: center;
         align-items: center;
 }
+ /* button {
+    height: 150px;
+
+ } */
 .winningMsg h1 {
     margin: 0;
     font-size: 70px;

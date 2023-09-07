@@ -25,14 +25,21 @@ function startGame () {
 setBoardHoverClass()
 }
 
-
 function cellClick(e) {
-
+    if (winningMsgTextElement.innerText !== '' || isDraw()) {
+        return; // Game has ended, prevent further moves 
+        // When return is used without a value, it means "exit the function at this point."
+    }
     const cell = e.target
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS 
     placeMark(cell, currentClass) //adds currentClass(x/circle) to e.target
+    document.getElementById('clickSound').play()
     if (checkWin(currentClass)){
         endGame(false)
+        setTimeout(() => {
+            document.getElementById('victorySound').play()
+        }, 500);
+
     }
     else if (isDraw()) {
         endGame(true)
@@ -72,6 +79,7 @@ function endGame(draw) {
     else {
         console.log(`${circleTurn ? 'O' : 'X'}-Wins!`)
         winningMsgTextElement.innerText = `${circleTurn ? 'O' : 'X'}-Wins!`
+
     }
     
 }
