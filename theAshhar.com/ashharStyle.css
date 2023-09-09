@@ -1,0 +1,11 @@
+* { font-family: 'Montserrat', sans-serif, monospace; }
+
+body {
+    background-color: #1a1a1a;
+}
+.logo {
+    width: 60px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
