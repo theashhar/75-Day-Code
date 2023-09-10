@@ -1,11 +1,134 @@
-* { font-family: 'Montserrat', sans-serif, monospace; }
+* { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;; 
+color: whitesmoke;}
 
+:root {
+    --mainHeading: 50px;
+    --subHeading: 35px;
+    --smallFont: 18px;
+    --themeColor: #28c1e0;
+    /* --themeColor: #053f4a; */
+}
+h1 {
+    font-size: var(--mainHeading);
+}
 body {
     background-color: #1a1a1a;
+    margin: 0;
+    overflow-x: hidden;
+}
+.navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+        justify-content: space-between;
+    /* align-items: center; */
+    margin: 1vh 0 11vh 40px;
+
 }
 .logo {
-    width: 60px;
+    width: 140px;
+    cursor: pointer;
+}
+ul {
+ font-size: var(--smallFont);
+ text-decoration: none;
+ list-style: none;
+ margin: 0;
+ gap: 5%;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}   
+li:not(.slash)::after {
+    content:'';
     position: absolute;
-    top: 3%;
-    left: 5%;
+    bottom: -10px;
+    height: 2px;
+    width: 60%;
+    left: -40%;
+    background-color: var(--themeColor);
+    
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+    transform: scaleX(0);
+}
+li:not(.slash):hover::after {
+    transform: scaleX(1) translate(100%);
+    color: var(--themeColor);
+}
+li:not(.slash):hover {
+    color: var(--themeColor);
+}
+.slash {
+    cursor: default;
+    user-select: none;
+}
+.headerItems {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+        justify-content: center;
+        align-items: center ;
+}
+
+
+.hero {
+    height: 72vh;
+    width: 100vw;
+    display: flex;
+        justify-content: space-evenly;
+    margin: 0 0 8vh 0;
+    /* padding: 0 5% 5% 0%; */
+}
+
+/* .mainImage {
+    
+} */
+.mainImage img {
+width: 330px;
+}
+.heroText {
+    width: 35%;
+}
+
+#name {
+    position: relative;
+    /* color: var(--themeColor); */
+}
+/* #name::after {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--themeColor);
+} */
+#code {
+    font-family: monospace;
+    font-size: var(--subHeading);
+    color: var(--themeColor);
+}
+#creativity {
+    font-family: Dancing Script;
+    font-size: calc(var(--subHeading)*1.2);
+    color: var(--themeColor);
+}
+.companiesPanel {
+    height: 200px;
+    width: 100vw;
+    background: linear-gradient(to right, #1c1d1e, #053f4a);
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+
+}
+.companiesPanel img {
+    width: 200px;
 }
