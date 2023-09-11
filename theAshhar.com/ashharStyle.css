@@ -123,12 +123,142 @@ width: 330px;
     width: 100vw;
     background: linear-gradient(to right, #1c1d1e, #053f4a);
     display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        
+        justify-content: center;
+        align-items:center;
+    }
+    .slideWrap {
+        height: 22%;
+        width: 80vw;
+        display: flex;
+            justify-content: center;
+            align-items:center;
+        /* overflow: auto; */
+        /* scroll-snap-type: x mandatory; */
+    }
 
+.slider {
+    height: 100%;
+    width: 80vw;
+    display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+    /* scroll-snap-align: start;
+    object-fit: cover; */
+}
+    .moreHeight{
+
+        height: 200%;
+    }
+    .square {
+        height: 130%;
+    }
+.slider img:not(.moreHeight, .square), .slide2 img:not(.moreHeight, .square){
+
+    height: 100%
+}
+.slider2 {
+    display: none;
+}
+/* 
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gradient-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1c1d1e, #053f4a);
+    z-index: -1;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: #333;
+} */
+
+.servicesContainer {
+    height: 50vh;
+    width: 100vw;
+    /* background-color: rgb(39, 39, 39); */
+    display: flex;
+    padding: 15vh 0 5vh 0;
+
+        justify-content: center;
+        align-items: center;
+}
+#whatIDo {
+margin: 0;
+padding: 0;
+cursor: pointer;
+position: relative;
+margin-bottom: 5vh;
 
 }
-.companiesPanel img {
-    width: 200px;
+    #whatIDo::after {
+        content:'';
+        position: absolute;
+        bottom: -8px;
+        height: 2px;
+        width: 40%;
+        left: 30%;
+        background-color: var(--themeColor);
+}
+.services {
+    height: 60vh;
+    width: 70vw;
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services span {
+        color: var(--themeColor);
+    }
+.servicesBox {
+    height: 35%;
+    width: 100%;
+    padding-top: 5vh;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+}
+.gradientBox, .darkBox {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 12px; */
+    border-radius: 15px;
 }
