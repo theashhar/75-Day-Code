@@ -1,18 +1,20 @@
 * { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;; 
-color: whitesmoke;}
+color: aliceblue;}
 
 :root {
     --mainHeading: 50px;
     --subHeading: 35px;
     --smallFont: 18px;
     --themeColor: #28c1e0;
+    --bgBolor: #161c1e;
+    --boxColor: #21272a;
     /* --themeColor: #053f4a; */
 }
 h1 {
     font-size: var(--mainHeading);
 }
 body {
-    background-color: #1a1a1a;
+    background-color: var(--bgBolor);
     margin: 0;
     overflow-x: hidden;
 }
@@ -30,20 +32,27 @@ body {
     cursor: pointer;
 }
 ul {
- font-size: var(--smallFont);
+ font-size: calc(var(--smallFont)*0.9);
  text-decoration: none;
  list-style: none;
  margin: 0;
- gap: 5%;
+ gap: 2%;
+ padding: 0;
 }
-
 li {
     margin: 0;
     padding: 0;
     cursor: pointer;
     position: relative;
-}   
-li:not(.slash)::after {
+} 
+.resume {
+ border: 1px solid var(--themeColor);
+ border-radius: 4px;
+ padding: 8px;
+ transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+
+}  
+li:not(.slash, .resume)::after {
     content:'';
     position: absolute;
     bottom: -10px;
@@ -59,6 +68,11 @@ li:not(.slash):hover::after {
     transform: scaleX(1) translate(100%);
     color: var(--themeColor);
 }
+.resume:hover {
+    /* transform: scaleX(1) translate(100%);
+    color: var(--themeColor); */
+    background-color: var(--boxColor);
+}
 li:not(.slash):hover {
     color: var(--themeColor);
 }
@@ -70,9 +84,10 @@ li:not(.slash):hover {
     width: 60%;
     height: 100%;
     display: flex;
-    /* flex-direction: column; */
         justify-content: center;
         align-items: center ;
+    padding-right: 4%;
+
 }
 
 
@@ -82,12 +97,8 @@ li:not(.slash):hover {
     display: flex;
         justify-content: space-evenly;
     margin: 0 0 8vh 0;
-    /* padding: 0 5% 5% 0%; */
 }
 
-/* .mainImage {
-    
-} */
 .mainImage img {
 width: 330px;
 }
@@ -97,17 +108,8 @@ width: 330px;
 
 #name {
     position: relative;
-    /* color: var(--themeColor); */
 }
-/* #name::after {
-    content:'';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: var(--themeColor);
-} */
+
 #code {
     font-family: monospace;
     font-size: var(--subHeading);
@@ -121,7 +123,7 @@ width: 330px;
 .companiesPanel {
     height: 200px;
     width: 100vw;
-    background: linear-gradient(to right, #1c1d1e, #053f4a);
+    background: linear-gradient(to right, var(--boxColor), #05333c);
     display: flex;
         justify-content: center;
         align-items:center;
@@ -159,6 +161,73 @@ width: 330px;
 .slider2 {
     display: none;
 }
+
+.servicesContainer {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    padding: 15vh 0 5vh 0;
+    
+    justify-content: center;
+    align-items: center;
+}
+#whatIDo {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5vh;
+    
+}
+#whatIDo::after {
+    content:'';
+    position: absolute;
+    bottom: -8px;
+    height: 2px;
+    width: 40%;
+    left: 30%;
+    background-color: var(--themeColor);
+}
+.services {
+    height: 60vh;
+    width: 70vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services span {
+    color: var(--themeColor);
+}
+.servicesBox {
+    height: 35%;
+    width: 100%;
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.gradientBox, .darkBox {
+    height: 100%;
+    width: 20%;
+    background-color: var(--boxColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.seeProjects {
+    /* z-index: 1; */
+    height: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* 
 .slider-container {
     position: relative;
@@ -202,63 +271,3 @@ img {
 .circle.active {
     background-color: #333;
 } */
-
-.servicesContainer {
-    height: 50vh;
-    width: 100vw;
-    /* background-color: rgb(39, 39, 39); */
-    display: flex;
-    padding: 15vh 0 5vh 0;
-
-        justify-content: center;
-        align-items: center;
-}
-#whatIDo {
-margin: 0;
-padding: 0;
-cursor: pointer;
-position: relative;
-margin-bottom: 5vh;
-
-}
-    #whatIDo::after {
-        content:'';
-        position: absolute;
-        bottom: -8px;
-        height: 2px;
-        width: 40%;
-        left: 30%;
-        background-color: var(--themeColor);
-}
-.services {
-    height: 60vh;
-    width: 70vw;
-    text-align: center;
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .services span {
-        color: var(--themeColor);
-    }
-.servicesBox {
-    height: 35%;
-    width: 100%;
-    padding-top: 5vh;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-}
-.gradientBox, .darkBox {
-    height: 100%;
-    width: 20%;
-    background-color: rgb(39, 39, 39);
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        /* gap: 12px; */
-    border-radius: 15px;
-}
