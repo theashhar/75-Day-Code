@@ -86,8 +86,7 @@ li:not(.slash):hover {
     display: flex;
         justify-content: center;
         align-items: center ;
-    padding-right: 4%;
-
+    padding-right: 2%;
 }
 
 
@@ -163,10 +162,10 @@ width: 330px;
 }
 
 .servicesContainer {
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     display: flex;
-    padding: 15vh 0 5vh 0;
+    padding: 30vh 0 0 0;
     
     justify-content: center;
     align-items: center;
@@ -189,12 +188,14 @@ width: 330px;
     background-color: var(--themeColor);
 }
 .services {
-    height: 60vh;
+    height: 550px;
     width: 70vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .services span {
@@ -210,23 +211,56 @@ width: 330px;
     gap: 15px;
 }
 .gradientBox, .darkBox {
-    height: 100%;
-    width: 20%;
+    height: 95%;
+    width: 18%;
     background-color: var(--boxColor);
     display: flex;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;    
     border-radius: 15px;
+    padding: 12px;
+}
+.gradientBox {
+    background: linear-gradient(to bottom, var(--bgBolor), #05333c);
+}
+.servicesBox img {
+    width: 50px;
+}
+.icons {
+    height: 20%;
+    width: 80%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.icons img {
+    width: 15px;
+    border-radius: 3px;
+    padding: 5px;
+}
+#blockchain {
+    position: relative;
+}
+#early {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    color: var(--themeColor);
+    font-size: x-small;
 }
 .seeProjects {
     /* z-index: 1; */
-    height: 10px;
+    height: 50px;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.chooseMe {
+    height: 35vh;
+    width: 100vw;
+    background-color:#000000;
+}
 
 /* 
 .slider-container {
