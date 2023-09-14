@@ -1,6 +1,33 @@
 * { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;; 
-color: aliceblue;}
+color: aliceblue;
+transition: 0.2s cubic-bezier(.43,.28,0,1.01);
 
+}
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+/* Track (the area on which the scrollbar runs) */
+::-webkit-scrollbar-track {
+    background: var(--bgBolor); /* Background color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #44535b; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #546a76; /* Color of the scrollbar handle on hover */
+}
+
+::selection {
+    background-color: var(--selectColor); /* Change this to your desired background color */
+    color: aliceblue; /* Change this to your desired text color */
+}
 :root {
     --mainHeading: 50px;
     --subHeading: 35px;
@@ -8,7 +35,8 @@ color: aliceblue;}
     --themeColor: #28c1e0;
     --bgBolor: #161c1e;
     --boxColor: #21272a;
-    /* --themeColor: #053f4a; */
+    --selectColor: #44535b;
+    --hoverColor: #05333c;
 }
 h1 {
     font-size: var(--mainHeading);
@@ -16,6 +44,7 @@ h1 {
 body {
     background-color: var(--bgBolor);
     margin: 0;
+    position: relative;
     overflow-x: hidden;
 }
 .navbar {
@@ -23,7 +52,6 @@ body {
     height: 8vh;
     display: flex;
         justify-content: space-between;
-    /* align-items: center; */
     margin: 1vh 0 11vh 40px;
 
 }
@@ -49,8 +77,9 @@ li {
  border: 1px solid var(--themeColor);
  border-radius: 4px;
  padding: 8px;
- transition: 0.2s cubic-bezier(.43,.28,0,1.01);
-
+ background-color: var(--bgBolor);
+ font-size: calc(var(--smallFont)*0.9);
+ /* transition: 0.2s cubic-bezier(.43,.28,0,1.01); */
 }  
 li:not(.slash, .resume)::after {
     content:'';
@@ -61,7 +90,7 @@ li:not(.slash, .resume)::after {
     left: -40%;
     background-color: var(--themeColor);
     
-    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+    /* transition: 0.2s cubic-bezier(.43,.28,0,1.01); */
     transform: scaleX(0);
 }
 li:not(.slash):hover::after {
@@ -69,9 +98,14 @@ li:not(.slash):hover::after {
     color: var(--themeColor);
 }
 .resume:hover {
-    /* transform: scaleX(1) translate(100%);
-    color: var(--themeColor); */
-    background-color: var(--boxColor);
+    background-color: var(--hoverColor);
+}
+.resume:not(#navResume):hover {
+    transform: translateY(-3px);}
+    
+#helloBtn {
+    z-index: 1;
+    margin-top: 70px;
 }
 li:not(.slash):hover {
     color: var(--themeColor);
@@ -122,7 +156,7 @@ width: 330px;
 .companiesPanel {
     height: 200px;
     width: 100vw;
-    background: linear-gradient(to right, var(--boxColor), #05333c);
+    background: linear-gradient(to right, var(--boxColor), var(--hoverColor));
     display: flex;
         justify-content: center;
         align-items:center;
@@ -161,24 +195,29 @@ width: 330px;
     display: none;
 }
 
-.servicesContainer {
-    height: 35vh;
+.servicesContainer, .chooseMe, .getInTouch {
+    height: 65vh;
     width: 100vw;
     display: flex;
-    padding: 30vh 0 0 0;
-    
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
+    padding: 20vh 0 0 0;
 }
-#whatIDo {
+.getInTouch{
+    padding-top: 10vh;
+    margin-bottom: 10px;
+
+}
+.whatIDo {
     margin: 0;
     padding: 0;
     cursor: pointer;
     position: relative;
+    top: 0;
     margin-bottom: 5vh;
     
 }
-#whatIDo::after {
+.whatIDo::after {
     content:'';
     position: absolute;
     bottom: -8px;
@@ -189,7 +228,7 @@ width: 330px;
 }
 .services {
     height: 550px;
-    width: 70vw;
+    width: 60vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -197,6 +236,10 @@ width: 330px;
     margin: 0 auto;
     padding: 0;
 }
+/* .chooseMe .services{
+    height: 450px;
+
+} */
 
 .services span {
     color: var(--themeColor);
@@ -210,19 +253,28 @@ width: 330px;
     align-items: center;
     gap: 15px;
 }
-.gradientBox, .darkBox {
+.darkBox {
     height: 95%;
-    width: 18%;
-    background-color: var(--boxColor);
+    width: 20%;
+    /* background-color: var(--boxColor); */
+    background: linear-gradient(0deg, var(--boxColor), transparent);
+
     display: flex;
         flex-direction: column;
         align-items: center;    
     border-radius: 15px;
-    padding: 12px;
+    padding: 20px 10px 15px;
+    /* transition: 0.5s cubic-bezier(.43,.28,0,1.01); */
+    cursor: default;
 }
-.gradientBox {
-    background: linear-gradient(to bottom, var(--bgBolor), #05333c);
+.darkBox p {
+    font-size: small;
 }
+.darkBox:hover {
+    background-color: var(--hoverColor);
+}
+
+
 .servicesBox img {
     width: 50px;
 }
@@ -235,8 +287,9 @@ width: 330px;
 }
 .icons img {
     width: 15px;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: 4px;
+    /* border: 1px solid rgb(18, 117, 132); */
+    margin: 5px;
 }
 #blockchain {
     position: relative;
@@ -247,19 +300,61 @@ width: 330px;
     right: 10px;
     color: var(--themeColor);
     font-size: x-small;
+    cursor: default;
 }
 .seeProjects {
-    /* z-index: 1; */
     height: 50px;
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 }
 .chooseMe {
-    height: 35vh;
-    width: 100vw;
-    background-color:#000000;
+    background-color:var(--bgBolor);
+}
+.socials {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+        bottom: 0;
+
+}
+.socialIcons {
+    height: 100%;
+    position: absolute;
+        left: 3vw;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+}
+.mail {
+    height: 100%;
+    position: absolute;
+        right: 4vw;
+    display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;  
+}
+.socialIcons img {
+    width: 15px;
+}
+#mail {
+    transform-origin: 100% 50%; /* Sets the transform origin to the bottom-right corner */
+    transform: rotate(90deg);
+    font-size: small;
+    cursor: vertical-text;
+}
+.vLine {
+    height: 40%;
+    width: 1px;
+    background-color: aliceblue;
+}
+.developed {
+    position: absolute;
+    bottom: 0;
+    font-size: small;
 }
 
 /* 
