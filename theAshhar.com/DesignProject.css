@@ -1,0 +1,209 @@
+* { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;
+color: aliceblue;
+transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bgBolor); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #44535b; 
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #546a76;
+}    
+::selection {
+    background-color: var(--selectColor); 
+    color: aliceblue;
+}
+:root {
+    --mainHeading: 50px;
+    --subHeading: 35px;
+    --smallFont: 18px;
+    --themeColor: #28c1e0;
+    --bgBolor: #161c1e;
+    --boxColor: #21272a;
+    --selectColor: #44535b;
+    --hoverColor: #05333c;
+}
+h1 {
+    font-size: calc(var(--mainHeading)*.8);
+}
+body {
+    background-color: var(--bgBolor);
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+.navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+        justify-content: space-between;
+    margin: 1vh 0 0 40px;
+
+}
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+ul {
+    font-size: calc(var(--smallFont)*0.9);
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    gap: 2%;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+} 
+.resume {
+    border: 1px solid var(--themeColor);
+    border-radius: 4px;
+    padding: 8px;
+    background-color: var(--bgBolor);
+    font-size: calc(var(--smallFont)*0.9);
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01) ;
+}  
+li:not(.slash, .resume)::after {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 60%;
+    left: -40%;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+    transform: scaleX(0);
+}
+li:not(.slash):hover::after {
+    transform: scaleX(1) translate(100%);
+    color: var(--themeColor);
+}
+.resume:hover {
+    background-color: var(--hoverColor);
+}
+.resume:not(#navResume):hover {
+    transform: translateY(-3px);
+}
+li:not(.slash):hover {
+    color: var(--themeColor);
+}
+.slash {
+    cursor: default;
+    user-select: none;
+}
+.headerItems {
+    width: 60%;
+    height: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center ;
+    padding-right: 2%;
+}
+
+.Designhero {    
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    margin: 1vh 0 8vh 0;
+    text-align: center;
+}
+    #centerHheading {
+        z-index: 1;
+    }
+    .neutron {
+        width: 490px;
+        height: 490px;
+        /* background-color: rgb(41, 63, 110); */
+        position: absolute;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+        position: relative;
+        border: 1px dashed var(--themeColor);
+        border-radius: 50%;;
+    }
+    /* .neutron:not(h1) {
+        filter: blur(1px);
+    } */
+
+    .electon {
+        width: 50%;
+        height: 50%;
+        /* background-color: rgb(90, 106, 106);     */
+        position: absolute;
+        /* border: 12px dotted deeppink; */
+        padding: 110px;
+        border-radius: 50%;
+        animation: rotationClock 12s infinite linear;
+    }
+
+        .electon::before{
+            content: url("Assets/ps.svg");
+            filter: blur(1px);
+            width: 30px;
+            height: 30px;
+            background-color: deeppink;
+            position: absolute;
+            /* left: -30px;         */
+            top: -30px;
+            border-radius: 50%;
+            animation: rotationAntiClock 8s infinite linear;
+        }
+        .electon1 {
+            width: 60%;
+            height: 90%;
+            /* background-color: rgb(90, 106, 106); */
+            position: absolute;
+            /* border: 12px dotted deeppink; */
+            padding: 110px;
+            border-radius: 50%;
+            animation: rotationClock 12s infinite linear;
+        }
+        .electon1::before{
+            content: url("Assets/illustrator.svg");
+            filter: blur(1px);
+            width: 30px;
+            height: 30px;
+            /* background-color: deeppink; */
+            position: absolute;
+            left: 0px;        
+            top: -50px;
+            border-radius: 50%;
+            animation: rotationAntiClock 8s infinite linear;
+        }
+        .electon1::after{
+            content: url("Assets/canva.svg");
+            filter: blur(1px);
+            width: 30px;
+            height: 30px;
+            /* background-color: deeppink; */
+            position: absolute;
+            /* left: -30px;         */
+            top: 50px;
+            border-radius: 50%;
+            animation: rotationAntiClock 8s infinite linear;
+        }
+@keyframes rotationClock {
+0% {
+    transform: rotate(360deg);
+}
+}
+@keyframes rotationAntiClock {
+0% {
+    transform: rotate(-360deg);
+}
+}

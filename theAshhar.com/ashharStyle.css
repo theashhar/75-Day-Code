@@ -1,32 +1,27 @@
-* { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;; 
+* { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;
 color: aliceblue;
 transition: 0.2s cubic-bezier(.43,.28,0,1.01);
-
 }
-/* Hide the default scrollbar */
 ::-webkit-scrollbar {
-    width: 6px; /* Width of the scrollbar */
+    width: 6px;
 }
-
-/* Track (the area on which the scrollbar runs) */
 ::-webkit-scrollbar-track {
-    background: var(--bgBolor); /* Background color of the track */
+    background: var(--bgBolor); 
 }
 
-/* Handle (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-    background: #44535b; /* Color of the scrollbar handle */
-    border-radius: 6px; /* Rounded corners of the handle */
+    background: #44535b; 
+    border-radius: 6px; 
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #546a76; /* Color of the scrollbar handle on hover */
+    background: #546a76;
 }
 
 ::selection {
-    background-color: var(--selectColor); /* Change this to your desired background color */
-    color: aliceblue; /* Change this to your desired text color */
+    background-color: var(--selectColor); 
+    color: aliceblue;
 }
 :root {
     --mainHeading: 50px;
@@ -79,7 +74,7 @@ li {
  padding: 8px;
  background-color: var(--bgBolor);
  font-size: calc(var(--smallFont)*0.9);
- /* transition: 0.2s cubic-bezier(.43,.28,0,1.01); */
+ transition: 0.2s cubic-bezier(.43,.28,0,1.01) ;
 }  
 li:not(.slash, .resume)::after {
     content:'';
@@ -89,8 +84,8 @@ li:not(.slash, .resume)::after {
     width: 60%;
     left: -40%;
     background-color: var(--themeColor);
-    
-    /* transition: 0.2s cubic-bezier(.43,.28,0,1.01); */
+    border-radius: 50%;
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
     transform: scaleX(0);
 }
 li:not(.slash):hover::after {
@@ -256,7 +251,6 @@ width: 330px;
 .darkBox {
     height: 95%;
     width: 20%;
-    /* background-color: var(--boxColor); */
     background: linear-gradient(0deg, var(--boxColor), transparent);
 
     display: flex;
@@ -264,7 +258,7 @@ width: 330px;
         align-items: center;    
     border-radius: 15px;
     padding: 20px 10px 15px;
-    /* transition: 0.5s cubic-bezier(.43,.28,0,1.01); */
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
     cursor: default;
 }
 .darkBox p {
@@ -341,7 +335,7 @@ width: 330px;
     width: 15px;
 }
 #mail {
-    transform-origin: 100% 50%; /* Sets the transform origin to the bottom-right corner */
+    transform-origin: 100% 50%;
     transform: rotate(90deg);
     font-size: small;
     cursor: vertical-text;

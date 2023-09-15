@@ -1,0 +1,395 @@
+[33mcommit afd4907b9b571b8cbb3e9278505f64a2e0576098[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Sep 15 16:55:09 2023 +0530
+
+    check
+
+[33mcommit a5b70804b23892e6ba33d0b5f923a544e484e8d5[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Sep 15 16:26:08 2023 +0530
+
+    pushing the code
+
+[33mcommit 4034a9890096b708e425f1fb7d70ec2347678611[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Thu Sep 14 23:29:34 2023 +0530
+
+     day 60/75 || home page development completed
+
+[33mcommit edcb0a66b91add95b04386c2f48ad13057356170[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Sep 13 23:12:07 2023 +0530
+
+    day 59/75 || website updated
+
+[33mcommit cc2c1de39cdcef3896fd9e9f09d3a134a18e9759[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Sep 13 17:33:56 2023 +0530
+
+    day 58/75 || added services section
+
+[33mcommit 48b95518f48c998e3099f2c15922eef5b37b020f[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Sep 11 23:27:07 2023 +0530
+
+    day 57/75 || added services section in portfolio'
+
+[33mcommit 3c6ef530150dfb3d8a9d179db25e43da6216a300[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Sep 10 23:04:54 2023 +0530
+
+    day 56/75 || Built navbar, hero section, companies worked with section
+
+[33mcommit 0bb0617637a4da6539d98f392bcf598966fd57a3[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Sep 10 00:59:11 2023 +0530
+
+    day 55/75 || research and building portfolio
+
+[33mcommit 2265942b7175a1a3c511cd24a8e6156cdf16d29e[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Sep 9 01:17:48 2023 +0530
+
+    Day 54/75 || improves reposiveness in TTT game, building portfolio site
+
+[33mcommit 28837305c438031fb019e9164b9234662742f0f5[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Sep 8 02:08:53 2023 +0530
+
+    day 53/75 || 'playing even after win' issue solved, sound added
+
+[33mcommit 5dfca87c737fed5863b61dbe10004a987cdf4c5a[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Sep 6 22:57:20 2023 +0530
+
+    day 52/75 || Tic Tac Toe Game complete!
+
+[33mcommit 004c98227690028c4a49aeb88586c3b269d5c955[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Sep 5 22:36:12 2023 +0530
+
+    day 51/75 || Building TTT APP
+
+[33mcommit 925c4c1ffdb2025e6d9e20755d27ead82c43d78a[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Sep 4 23:48:26 2023 +0530
+
+    day 50/75 || TTT Game xplaceMark
+
+[33mcommit 55bc02dc233b9f9dc9ec273c7120cea0bf18ebd4[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Sep 3 23:58:58 2023 +0530
+
+    day 49/75 || TTT front end complete, boardClick function added
+
+[33mcommit c00f4eddcd60dfc1220da31394ee3f77a970734d[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Sep 2 23:02:39 2023 +0530
+
+    Day 47/75 || Hover effect and other designing in TTT game
+
+[33mcommit 1e647f70b6b57d213855441292655f2b558e6d5d[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Sep 2 00:48:28 2023 +0530
+
+    Day 47/75 || Tic Tac Toe game front-End
+
+[33mcommit 8230d1be092944f3665412cf0366ec3378ebecec[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Thu Aug 31 22:55:32 2023 +0530
+
+    day 46/75 || Pseudo Selectors and Tic Tac Toe Game
+
+[33mcommit 61b910e440b26bc28427b99d6bf3dfe7bc9519ad[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Thu Aug 31 00:56:35 2023 +0530
+
+    day 45/75 || Practiced Classes & Learned event listners
+
+[33mcommit 459807ae17b9c3261736a4c3418804b7f408687f[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 30 00:49:50 2023 +0530
+
+    day 44/75 || made weather App responsive
+
+[33mcommit 16e2be12c432211a76b317e87743b470d725837f[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Aug 29 00:21:45 2023 +0530
+
+    day 43/75 || Theory and practice on classes
+
+[33mcommit b64bc288ac0fde89240dfce1d0f4b31dcc35f677[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Aug 27 23:08:17 2023 +0530
+
+    day 42/75 || Classes
+
+[33mcommit 21c4462381b0aa5062dd170087d18a3de4d4ce03[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Aug 27 01:04:03 2023 +0530
+
+    day 41 || Weather App updated, weather details, UI issues fixed
+
+[33mcommit 439207b7b40ce339ac5ea24434d4691d4c8e94e8[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Aug 26 00:44:10 2023 +0530
+
+    day 40/75 || Weather APP main functionality completed, search feature added, weather details reflects in DOM
+
+[33mcommit 51e28a718a83e604154d8b5fe9a7640e9db7cfad[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Aug 25 00:25:27 2023 +0530
+
+    day 39/75 || Weather App degree fetched and updated in the DOM
+
+[33mcommit 9102fcff073b06b7a543e8da7f8a274ecd9c0876[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 23 23:47:07 2023 +0530
+
+    Day 38/75 || weather app front-end Update
+
+[33mcommit 9fa8ad984dd7e5d8d7fae76e41a0995ffab42fd6[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 23 01:43:57 2023 +0530
+
+    day 37/75 || WeatherAPP front-end
+
+[33mcommit 732305ecfcf7cbc3a21dbafb7578bb58f8f4368f[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Aug 22 01:22:55 2023 +0530
+
+    day 36/75 || Building Weather App
+
+[33mcommit ee6a87cfc003fc2d78a94e0652563a91c2087029[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Aug 21 01:39:23 2023 +0530
+
+    day 35/75 || Async Await synchronous functions
+
+[33mcommit 2cf617714a78cfe25af23ce0ad14e2752b844879[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Aug 20 00:27:22 2023 +0530
+
+    day 34/75 || CLOSURES, Async/Await
+
+[33mcommit fdd7d6858a05f73638bf2cee6092467843ee7bac[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Aug 19 01:10:30 2023 +0530
+
+    day 33/75 || closures and Promises
+
+[33mcommit ce14c40f3f746c52addad727741b7b26ec9f5940[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Aug 18 00:45:34 2023 +0530
+
+    Day 32/75 ||  Ternary Operators, .catch .then
+
+[33mcommit b16eb50d0f413011154285ee795c6551c84d3fb3[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 16 23:23:14 2023 +0530
+
+    day 31/75
+
+[33mcommit 3bbe45028d6fedbbe0ce612c28d8ec9291bd25ab[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Aug 15 22:59:12 2023 +0530
+
+    day 30/75 || Created search for and generate random image superhero app using API
+
+[33mcommit 5ec604b5901edc14ae5909b358f2063137bab2d9[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Aug 14 23:54:50 2023 +0530
+
+    day 29/75 || Learned Api. Made image generation app
+
+[33mcommit f4642d67c60cd6599921159ec92bd3e848bc5fa0[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Aug 14 00:35:55 2023 +0530
+
+    Day 28/75 Stone Paper Scissor Game finished
+
+[33mcommit 1b6f92cfa9302a7b2a2a1162fd826ad3148606b9[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Aug 12 15:56:25 2023 +0530
+
+    day 27/75 || SPC game -> player result status updated, total match status updated
+
+[33mcommit fd77ba63bafb626c713766ffce2f41467eebed20[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Aug 12 00:40:31 2023 +0530
+
+    day 26/75 || SPS game made
+
+[33mcommit 55eecdc9d670ba8e6b8376f7fff618e48dc51567[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Aug 11 01:19:47 2023 +0530
+
+    day 25/75 || building stone papper scissor game
+
+[33mcommit 44f66df72ce4a03c223b9519589c5b31777049d3[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Thu Aug 10 01:43:55 2023 +0530
+
+    day 24/75 || Building Stone paper scissor
+
+[33mcommit fb28e2d4955bd5d803d83d7db2be27c7986a3a09[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 9 00:30:58 2023 +0530
+
+    day 24/75 || Stone Paper Scissor in making
+
+[33mcommit a3be285c932e3298efffebd8583fea08bbd33c8b[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Aug 7 22:46:45 2023 +0530
+
+    day 22/75 || Stone Paper Scissor Game frontend
+
+[33mcommit 7fbfd52f2022ddc8272a43f1eb2981e5094e5b74[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Aug 7 02:06:21 2023 +0530
+
+    day 21/75 || Bill calculating app completed. learned functions, DOM better
+
+[33mcommit 765689fb75e5df021972c4f7385561db8da79137[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Aug 6 01:15:57 2023 +0530
+
+    day 20/75 || Building Tip and Bill calculator App
+
+[33mcommit b91557e22a56653e1740b9a3e491d75b3a1dd8d2[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Aug 5 00:31:57 2023 +0530
+
+    day 19/75 || Tip Calculator Javasctipt
+
+[33mcommit 6fb006e9184b09c1cec33c92bbf1ddb54db73521[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Aug 4 01:21:56 2023 +0530
+
+    day 18/75 || tip calculator webApp fornt-end
+
+[33mcommit c00560fe112061410de7c87567033adeaddd4ebc[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 2 23:55:46 2023 +0530
+
+    day 17/75 || Json files & API basics
+
+[33mcommit f3b59be51820b9488ebeb02cf54eaabf01a69557[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Aug 2 22:27:43 2023 +0530
+
+    day 16/75 || Theory on Objects and more
+
+[33mcommit 4e51d185ab0c43a332fc0bbcb642ae4bdcd17326[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Aug 1 22:22:12 2023 +0530
+
+    day 15/75 || Theory, Objects and Symobol
+
+[33mcommit 15a7581ad693e1b7e5719bb4300057c9f4e26de1[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 31 14:22:27 2023 +0530
+
+    day 14/75 || DOM manipulation & Click Counter
+
+[33mcommit d7950d6a02cf89dab0a6da9faaba5783dc8bbb21[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Jul 30 00:36:09 2023 +0530
+
+    day13/75 || DOM Manipulation
+
+[33mcommit cf76574339bdca215df5ee802af25ec05a3aebf1[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Jul 29 00:53:17 2023 +0530
+
+    day 12 || DOM Manipulation
+
+[33mcommit 46107f3d56e6763ae882e78d42109b028aa5f374[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Jul 28 00:54:29 2023 +0530
+
+    day 11/75 || Higher Order Functions- filter(), reduce()
+
+[33mcommit 5f722b187449a718ec25e806e7ea83adab4f77a5[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Thu Jul 27 00:37:21 2023 +0530
+
+    day 10/75 || Higher Order functions
+
+[33mcommit e4a66e20006f44faa4e990b0a2c179e00c0100ec[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Jul 26 00:13:13 2023 +0530
+
+    day 9/75 || Higher Order Funtions and some theory
+
+[33mcommit aa751708ed58ab5563cde9a1e0c06ab4ace7eb7b[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Jul 25 00:08:34 2023 +0530
+
+    day8/75 || Objects Extended learning
+
+[33mcommit 9ba1daa462b91584229cf9cdb18f2d7889cff663[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 24 00:03:32 2023 +0530
+
+    day 7/75 || Objects Extended
+
+[33mcommit 081f82e46086e5253d16349e7bedeab467d4b6df[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sun Jul 23 00:00:16 2023 +0530
+
+    day6/75 || Objects in Javascript
+
+[33mcommit 6255fcff623e034417620ad6f230eb4742bc3590[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Sat Jul 22 00:16:40 2023 +0530
+
+    day 5/75 || for in loops
+
+[33mcommit 2e5fbbecca46ea8ea464efde9bb187f42805c15c[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Fri Jul 21 00:22:09 2023 +0530
+
+    day 4/75 || loops
+
+[33mcommit a2c200d45b70a8621e9215b6d9c27bfa2a2ab220[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Wed Jul 19 22:28:15 2023 +0530
+
+    day 3/75 || Revised: funtions, arrow funtions, objects, arrays
+
+[33mcommit befcec6d2a7b30ce9be03d50872fad5ecd03473b[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Tue Jul 18 23:51:53 2023 +0530
+
+    day2/75
+
+[33mcommit 28d1f16bedeaaaffd58b43450d00208073985f9d[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 17 23:53:50 2023 +0530
+
+    first commit
+
+[33mcommit 4c3012348ce0aba72900551bccd4dad9e15194d9[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 17 23:45:34 2023 +0530
+
+    Day 1/75
+
+[33mcommit 506ea7d679da1e1938d47721c4b957154f25ccd4[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 17 23:44:36 2023 +0530
+
+    first commit
+
+[33mcommit af94326f9abac9de09c0a7b79259db706f920300[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 17 23:44:21 2023 +0530
+
+    first commit
+
+[33mcommit 0b26b7588a93bb42d057df51cfbd86c3606613f6[m
+Author: Ashhar Ali Ahmed <ashhar1111981@gmail.com>
+Date:   Mon Jul 17 23:39:21 2023 +0530
+
+    first commit
