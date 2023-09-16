@@ -2,13 +2,15 @@
 color: aliceblue;
 transition: 0.2s cubic-bezier(.43,.28,0,1.01);
 }
+a {
+    display: contents;
+}
 ::-webkit-scrollbar {
     width: 6px;
 }
 ::-webkit-scrollbar-track {
     background: var(--bgBolor); 
 }
-
 ::-webkit-scrollbar-thumb {
     background: #44535b; 
     border-radius: 6px; 
@@ -30,8 +32,11 @@ transition: 0.2s cubic-bezier(.43,.28,0,1.01);
     --selectColor: #44535b;
     --hoverColor: #05333c;
 }
-h1 {
+.Designhero h1 {
     font-size: calc(var(--mainHeading)*.8);
+}
+h1 {
+    font-size: var(--mainHeading);
 }
 body {
     background-color: var(--bgBolor);
@@ -45,7 +50,6 @@ body {
     display: flex;
         justify-content: space-between;
     margin: 1vh 0 0 40px;
-
 }
 .logo {
     width: 140px;
@@ -110,7 +114,6 @@ li:not(.slash):hover {
         align-items: center ;
     padding-right: 2%;
 }
-
 .Designhero {    
     height: 80vh;
     width: 100vw;
@@ -120,82 +123,139 @@ li:not(.slash):hover {
         align-items: center;
     margin: 1vh 0 8vh 0;
     text-align: center;
+    position: relative;
+    /* overflow-y: hidden; */
 }
     #centerHheading {
-        z-index: 1;
+        z-index: 4;
+        position: absolute;
+        cursor: default;
     }
     .neutron {
         width: 490px;
         height: 490px;
-        /* background-color: rgb(41, 63, 110); */
         position: absolute;
         display: flex;
             justify-content: center;
             align-items: center;
         position: relative;
-        border: 1px dashed var(--themeColor);
-        border-radius: 50%;;
+        border-radius: 50%;
+        z-index: 1;
+        transform: scale(0.5);
+        transition: 0.2s cubic-bezier(.43,.28,0,1.01) ;
     }
-    /* .neutron:not(h1) {
-        filter: blur(1px);
-    } */
-
-    .electon {
-        width: 50%;
-        height: 50%;
+    .light {
+        width: 450px;
+        height: 450px;
+        position: absolute;
+        background-color: var(--themeColor);
+        filter: blur(190px);
+        opacity: 0.8;
+        z-index: -2;
+    }
+    .light:hover, .neutron:hover {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    .PS_electon {
+        width: 25%;
         /* background-color: rgb(90, 106, 106);     */
         position: absolute;
-        /* border: 12px dotted deeppink; */
-        padding: 110px;
+        /* border: 1px dashed var(--themeColor); */
         border-radius: 50%;
-        animation: rotationClock 12s infinite linear;
+        padding: 110px;
+        animation: rotationClock 9s infinite linear;
     }
-
-        .electon::before{
+        .PS_electon::before{
             content: url("Assets/ps.svg");
             filter: blur(1px);
-            width: 30px;
-            height: 30px;
-            background-color: deeppink;
+            width: 32px;
             position: absolute;
-            /* left: -30px;         */
-            top: -30px;
+            left: 0px;
+            top: 0px;    
+            border-radius: 50%;
+            animation: rotationAntiClock 7s infinite linear;
+            opacity: 0.9;
+        }
+
+    .AI_electon {
+            width: 50%;
+            position: absolute;
+            /* background-color: #05333c;   */
+            padding: 110px;
+            /* border-radius: 50%; */
+            animation: rotationClock 17s infinite linear;
+        }
+        .AI_electon::before{
+            content: url("Assets/illustrator.svg");
+            filter: blur(1px);
+            width: 28px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
             border-radius: 50%;
             animation: rotationAntiClock 8s infinite linear;
+            opacity: 0.8;
         }
-        .electon1 {
+    .ID_electon {
             width: 60%;
-            height: 90%;
             /* background-color: rgb(90, 106, 106); */
             position: absolute;
             /* border: 12px dotted deeppink; */
             padding: 110px;
             border-radius: 50%;
-            animation: rotationClock 12s infinite linear;
+            animation: rotationClock 25s infinite linear;
         }
-        .electon1::before{
-            content: url("Assets/illustrator.svg");
+        .ID_electon::before{
+            content: url("Assets/indesign.svg");
             filter: blur(1px);
-            width: 30px;
-            height: 30px;
+            width: 26px;
             /* background-color: deeppink; */
             position: absolute;
             left: 0px;        
             top: -50px;
-            border-radius: 50%;
-            animation: rotationAntiClock 8s infinite linear;
+            border-radius: 90px;
+            animation: rotationAntiClock 15s infinite linear;
+            opacity: 0.7;
         }
-        .electon1::after{
-            content: url("Assets/canva.svg");
-            filter: blur(1px);
-            width: 30px;
-            height: 30px;
-            /* background-color: deeppink; */
+    .figma_electon {
+            width: 75%;
+            /* background-color: rgb(90, 106, 106); */
             position: absolute;
-            /* left: -30px;         */
-            top: 50px;
+            padding: 110px;
+            /* border-radius: 50%; */
+            animation: rotationClock 40s infinite linear;
+        }
+        .figma_electon::before{
+            content: url("Assets/figma.svg");
+            filter: blur(1px);
+            width: 20px;
+            position: absolute;
+            right: 0px;        
+            top: -50px;
+            border-radius: 50%;
+            animation: rotationAntiClock 14s infinite linear;
+            opacity: 0.6;
+        }
+    .CANVA_electon {
+            width: 85%;
+            /* background-color: rgb(90, 106, 106); */
+            position: absolute;
+            padding: 110px;
+            /* border: 1px solid #161c1e; */
+            /* border-radius: 50%; */
+            animation: rotationClock 52s infinite linear;
+        }
+        .CANVA_electon::before{
+            content: url("Assets/canva.svg");
+            filter: blur(0.5px);
+            width: 22px;
+            position: absolute;
+            right: 0px;        
+            bottom: -50px;
             border-radius: 50%;
             animation: rotationAntiClock 8s infinite linear;
+            opacity: 0.5;
         }
 @keyframes rotationClock {
 0% {
@@ -207,3 +267,154 @@ li:not(.slash):hover {
     transform: rotate(-360deg);
 }
 }
+
+.logos {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    margin: 0 0 8vh 0;
+}
+/* .logos p {
+    color: rgb(182, 189, 194);
+} */
+.HeadingProject {
+    margin-top: 40px;
+    /* padding: 0; */
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    margin-bottom: 5vh;    
+}
+.HeadingProject::after {
+    content:'';
+    position: absolute;
+    bottom: -8px;
+    height: 2px;
+    width: 40%;
+    left: 30%;
+    background-color: var(--themeColor);
+}
+.pacificCalm, .aayu {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+}
+.titles {
+    /* height: 10%; */
+    width: 80%;
+    display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 10%;
+    cursor: default;
+}
+.titles p {
+
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.titles p::after {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 60%;
+    left: -40%;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+    transform: scaleX(0);
+}
+.titles p:hover::after {
+    transform: scaleX(1) translate(100%);
+    color: var(--themeColor);
+}
+.titles p:hover, .preview.hover {
+    color: var(--themeColor);
+}
+
+.slides {
+    height: 500px;
+    width: 900px;
+    display: flex;
+        justify-content: center;
+        gap: 10%;
+        transition: all 1s ease;
+        animation: slideit 1s linear 0s 1 ;
+        border-radius: 30px;
+    /* overflow: scroll; */
+    }
+.slide, .slide2 {
+    height: 500px;
+    width: 900px;
+    object-fit: contain;
+    border-radius: 30px;
+} 
+
+.slide.preview {
+    content: url(Assets/pacificcalm_Preview.png);
+}
+ .slide.psychology {
+    content: url(Assets/pacificcalm_psycology.png);
+}
+.slide.mockups {
+    content: url(Assets/pacificcalm_mockup.png);
+}
+
+.slide2.preview2 {
+    content: url(Assets/aayu_preview.png);
+}
+ .slide2.psychology2 {
+    content: url(Assets/aayu_psycology.png);
+}
+.slide2.mockups2 {
+    content: url(Assets/aayu_mockup.png);
+}
+
+
+
+/* 
+.carousel-container {
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    max-width: 100%;  Ensure images don't exceed the container's width 
+    height: auto;
+}
+
+.carousel-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-nav p {
+    display: inline;
+    cursor: pointer;
+    margin: 0 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+     For screens with a maximum width of 768px (typical mobile devices) 
+    .carousel-container {
+        max-width: 300px;
+    }
+} */
