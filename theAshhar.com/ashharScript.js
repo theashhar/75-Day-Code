@@ -14,6 +14,7 @@ const logoImageElement2 = document.getElementById('slideImg2')
 //     cell.addEventListener('click', clickMark, { once : true })
 // })
 
+
 previewTextElement.addEventListener('click', handleClick)
 function handleClick() {
     logoImageElement.classList.remove('psychology')
@@ -43,8 +44,9 @@ function handleClick3() {
 }
 
 
-previewTextElement2.addEventListener('click', handleClick_1)
-function handleClick_1() {
+
+previewTextElement2.addEventListener('click', handleClickPrev)
+function handleClickPrev() {
     logoImageElement2.classList.remove('psychology2')
     logoImageElement2.classList.remove('mockups2')
     logoImageElement2.classList.add('preview2')
@@ -52,8 +54,8 @@ function handleClick_1() {
     mockupsTextElement2.classList.remove('hover')
     previewTextElement2.classList.add('hover')
 }
-psychologyTextElement.addEventListener('click', handleClick_2)
-function handleClick_2() {
+psychologyTextElement2.addEventListener('click', handleClickPsy)
+function handleClickPsy() {
     logoImageElement2.classList.remove('preview2')
     logoImageElement2.classList.remove('mockups2')
     logoImageElement2.classList.add('psychology2')
@@ -61,15 +63,14 @@ function handleClick_2() {
     mockupsTextElement2.classList.remove('hover')
     psychologyTextElement2.classList.add('hover')
 }
-mockupsTextElement.addEventListener('click', handleClick_3)
-function handleClick_3() {
+mockupsTextElement2.addEventListener('click', handleClickMock)
+function handleClickMock() {
     logoImageElement2.classList.remove('preview2')
     logoImageElement2.classList.add('mockups2')
     previewTextElement2.classList.remove('hover')
     psychologyTextElement2.classList.remove('hover')
     mockupsTextElement2.classList.add('hover')
 }
-
 
 
 

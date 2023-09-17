@@ -338,7 +338,7 @@ li:not(.slash):hover {
     transform: scaleX(1) translate(100%);
     color: var(--themeColor);
 }
-.titles p:hover, .preview.hover {
+.titles p:hover, .preview.hover,  .preview2.hover {
     color: var(--themeColor);
 }
 
