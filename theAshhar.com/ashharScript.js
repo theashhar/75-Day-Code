@@ -86,20 +86,37 @@ function moveSlider(step) {
   currentIndex = Math.min(currentIndex, maxAllowedIndex);
 
   // Disable or enable the "Next" button based on currentIndex
-  const nextButton = document.querySelector('.next-button');
-  nextButton.disabled = currentIndex === maxAllowedIndex;
+//   const nextButton = document.querySelector('.next-button');
+//   nextButton.disabled = currentIndex === maxAllowedIndex;
 
-  currentIndex = Math.max(currentIndex, 0);
+//   currentIndex = Math.max(currentIndex, 0);
 
   slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-
-// Disable the "Next" button initially if we start at the last set of images
-const nextButton = document.querySelector('.next-button');
-nextButton.disabled = currentIndex === maxAllowedIndex;
+// const nextButton = document.querySelector('.next-button');
+// nextButton.disabled = currentIndex === maxAllowedIndex;
 
 
+function moveSliderPoster(step) {
+  const slider = document.querySelector('.sliderPoster');
+  const slideWidth = document.querySelector('.posterSlide').clientWidth;
+  const maxIndex = slider.children.length - 1;
+
+  currentIndex += step;
+
+  // Ensure currentIndex doesn't go beyond the last set of images
+  const maxAllowedIndex = maxIndex - 2;
+  currentIndex = Math.min(currentIndex, maxAllowedIndex);
+
+  // Disable or enable the "Next" button based on currentIndex
+//   const nextButton = document.querySelector('.next-button2');
+//   nextButton.disabled = currentIndex === maxAllowedIndex;
+
+//   currentIndex = Math.max(currentIndex, 0);
+
+  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
 
 
 

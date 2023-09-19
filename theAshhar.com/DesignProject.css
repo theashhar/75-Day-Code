@@ -269,7 +269,7 @@ body {
 }
 
 .logos {
-    height: 250vh;
+    height: 350vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -391,7 +391,7 @@ margin: 0 auto;
     content: url(Assets/aayu_mockup.png);
 }
 
-.otherLogos {
+.otherLogos, .posters {
     height: 25%;
     width: 900px;
     display: flex;
@@ -420,9 +420,10 @@ margin: 0 auto;
     height: 200px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
   }
   
-  .slider {
+  .slider, .sliderPoster {
     display: flex;
     transition: transform 0.3s ease-in-out;
   }
@@ -439,25 +440,42 @@ margin: 0 auto;
     object-position: center;
   }
   
-  .prev-button, .next-button {
+  .prev-button, .next-button, .next-button2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 15px 10px;
     cursor: pointer;
+    opacity: .8;
   }
   
   .prev-button {
     left: 0;
   }
   
-  .next-button {
+  .next-button, .next-button2 {
     right: 0;
   }
   
+  .slider-container-posters {
+    width: 350px; /* Adjust the width as needed to show 3 images at a time */
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+  .posterSlide {
+    flex: 0 0 100%;
+  }
+  .posterSlide img {
+    width: 350px;
+    height: 700px;
+    object-fit: scale-down;
+    object-position: center;
+  }
 
 /* .logoSlide ul {
     margin: 0;
