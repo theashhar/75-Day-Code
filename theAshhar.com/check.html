@@ -13,21 +13,28 @@
         justify-content: center;
         align-items: center;
 }
-/* .logoSlide {
+
+
+
+
+
+.slider-container {
+    width: 900px; /* Adjust the width as needed to show 3 images at a time */
     height: 200px;
-    width: 900px;
-    background-color: antiquewhite;
+    overflow: hidden;
     position: relative;
+    border-radius: 10px;
+  }
+  
+  
+.otherLogos, .posters {
+    height: 25%;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
-.logoSlide img {
-    width: 290px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-} */
-
-
-
 
 .slider-container {
     width: 900px; /* Adjust the width as needed to show 3 images at a time */
@@ -42,9 +49,17 @@
     transition: transform 0.3s ease-in-out;
   }
   
-
+  .logoSlide {
+    flex: 0 0 33.33%; /* Each slide takes up 33.33% of the container width */
+    /* margin: 0 10px 0 10px ; */
+  }
   
-
+  .slider img {
+    width: 290px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
   
   .prev-button, .next-button, .next-button2 {
     position: absolute;
@@ -65,23 +80,25 @@
   .next-button, .next-button2 {
     right: 0;
   }
-  
+
+  .posters {
+    height: 30%;
+  }
   .slider-container-posters {
-    width: 350px; /* Adjust the width as needed to show 3 images at a time */
-    height: 700px;
+    width: 660px; /* Adjust the width as needed to show 3 images at a time */
+    height: 825px; /*: ratio */
     overflow: hidden;
     position: relative;
     border-radius: 10px;
   }
   .posterSlide {
-    flex: 0 0 10%;
+    flex: 0 0 100%;
   }
-  
   .posterSlide img {
-    width: 10px;
-  /* height: 50%; */
-    object-fit: contain;
-    /* object-position: center; */
+    width: 660px;
+    height: 825px;
+    object-fit: cover;
+    object-position: center;
   }
         @media (max-width: 768px) {
             /* For screens with a maximum width of 768px (typical mobile devices) */

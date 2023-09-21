@@ -97,25 +97,25 @@ function moveSlider(step) {
 // const nextButton = document.querySelector('.next-button');
 // nextButton.disabled = currentIndex === maxAllowedIndex;
 
-
+let currentIndexPoster = 0
 function moveSliderPoster(step) {
   const slider = document.querySelector('.sliderPoster');
   const slideWidth = document.querySelector('.posterSlide').clientWidth;
   const maxIndex = slider.children.length - 1;
 
-  currentIndex += step;
+  currentIndexPoster += step;
 
   // Ensure currentIndex doesn't go beyond the last set of images
-  const maxAllowedIndex = maxIndex - 2;
-  currentIndex = Math.min(currentIndex, maxAllowedIndex);
+  const maxAllowedIndex = maxIndex;
+  currentIndexPoster = Math.min(currentIndexPoster, maxAllowedIndex);
 
-  // Disable or enable the "Next" button based on currentIndex
+  // Disable or enable the "Next" button based on currentIndexPoster
 //   const nextButton = document.querySelector('.next-button2');
-//   nextButton.disabled = currentIndex === maxAllowedIndex;
+//   nextButton.disabled = currentIndexPoster === maxAllowedIndex;
 
-//   currentIndex = Math.max(currentIndex, 0);
+//   currentIndexPoster = Math.max(currentIndexPoster, 0);
 
-  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  slider.style.transform = `translateX(-${currentIndexPoster * slideWidth}px)`;
 }
 
 
