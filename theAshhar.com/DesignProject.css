@@ -304,7 +304,7 @@ margin: 0 auto;
     content:'';
     position: absolute;
     bottom: -8px;
-    height: 2px;
+    height: 1px;
     width: 40%;
     left: 30%;
     background-color: var(--themeColor);
@@ -338,7 +338,7 @@ margin: 0 auto;
 .titles p::after {
     content:'';
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     height: 2px;
     width: 60%;
     left: -40%;

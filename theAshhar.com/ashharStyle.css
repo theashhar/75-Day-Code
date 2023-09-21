@@ -1,6 +1,9 @@
 * { font-family: 'Montserrat', sans-serif, monospace, 'Dancing Script', cursive;
 color: aliceblue;
 transition: 0.2s cubic-bezier(.43,.28,0,1.01);
+} 
+html {
+    scroll-behavior: smooth;
 }
 a {
     display: contents;

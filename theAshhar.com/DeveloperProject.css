@@ -23,7 +23,7 @@
         color: aliceblue;
     }
     :root {
-        --mainHeading: 50px;
+        --mainHeading: 40px;
         --subHeading: 35px;
         --smallFont: 18px;
         --themeColor: #28c1e0;
@@ -33,7 +33,7 @@
         --hoverColor: #05333c;
     }
     .Designhero h1 {
-        font-size: calc(var(--mainHeading)*.8);
+        font-size: var(--mainHeading);
     }
     h1 {
         font-size: var(--mainHeading);
@@ -264,4 +264,97 @@
     0% {
         transform: rotate(-360deg);
     }
+    }
+
+.featuredProjectsDiv {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.featuredProjects {
+    height: 1600px;
+    width: 70vw;
+    padding: 0 40px;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    .ProjectHeading {
+        /* padding-top: 70px; */
+        cursor: pointer;
+        position: relative;
+        top: 0;
+        margin-bottom: 80px;    
+        margin-top: 0;
+    }
+    .ProjectHeading::after {
+        content:'';
+        position: absolute;
+        bottom: -8px;
+        height: 1px;
+        width: 40%;
+        left: 30%;
+        background-color: var(--themeColor);
+    }
+    .project {
+        height: 330px; /*(effective = 450px)*/
+        width: 100%;
+        position: relative;
+        /* background-color: rgb(64, 64, 64); */
+        margin-bottom: 50px;
+    }
+    #projectImg {
+        height: 100%;
+        width: 60%;
+        object-fit: cover;
+        position: absolute;
+            left: 0;
+
+        border-radius: 8px;
+
+    }
+    .textDiv {
+        height: 100%;
+        width: 50%;
+        position: absolute;
+            right: 0;
+        /* background-color: #44535b; */
+        /* opacity: 0.3; */
+        display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    }
+    .textDiv h2 {
+        margin-bottom: 0;
+    }
+    .Projectsubtitle {
+        margin-top: 0;
+        font-size: small;
+    }
+    .projectDescription {
+        background-color: #05333c;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: right;
+        opacity: 0.9;
+    }
+    .techStack {
+        width: 70%;
+        display: flex;
+            justify-content: flex-end;
+        gap: 15px;
+        position: absolute;
+        bottom: 40px; 
+    }
+    .techStack p {
+        font-family: monospace;
+    }
+    .techStack.links {
+        position: absolute;
+        bottom: 10px;
+    }
+    .techStack.links img {
+        width: 20px;
     }
