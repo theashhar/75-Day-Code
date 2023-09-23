@@ -303,28 +303,38 @@
         width: 100%;
         position: relative;
         /* background-color: rgb(64, 64, 64); */
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
-    #projectImg {
+    .projectImg {
         height: 100%;
         width: 60%;
         object-fit: cover;
         position: absolute;
-            left: 0;
-
         border-radius: 8px;
-
+    }
+    .projectImg.right {
+        left: 0;
+    }
+    .projectImg.left {
+        right: 0;
     }
     .textDiv {
         height: 100%;
         width: 50%;
         position: absolute;
-            right: 0;
         /* background-color: #44535b; */
         /* opacity: 0.3; */
         display: flex;
             flex-direction: column;
-            align-items: flex-end;
+    }
+    .textDiv.right {
+        right: 0;
+        align-items: flex-end;
+    }
+    .textDiv.left {
+        left: 0;
+        /* align-items: flex-end; */
+
     }
     .textDiv h2 {
         margin-bottom: 0;
