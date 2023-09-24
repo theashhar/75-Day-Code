@@ -265,6 +265,43 @@
         transform: rotate(-360deg);
     }
     }
+    .socials {
+        height: 10vh;
+        width: 100%;
+        position: absolute;
+            bottom: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .socialIcons {
+        height: 100%;
+        width: 40%;
+
+        display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+    }
+    .mail {
+        height: 100%;
+        position: absolute;
+            right: 4vw;
+        display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;  
+    }
+    .socialIcons img {
+        width: 15px;
+    }
+
+    .vLine {
+        width: 20%;
+        border: 1px dashed aliceblue;
+        /* background-color: aliceblue; */
+    }
 
 .featuredProjectsDiv {
     display: flex;
@@ -345,25 +382,35 @@
     }
     .projectDescription {
         background-color: #05333c;
-        padding: 25px;
+        padding: 20px;
         border-radius: 8px;
-        text-align: right;
         opacity: 0.9;
+    }
+    .projectDescription.right{
+        text-align: right;
+
     }
     .techStack {
         width: 70%;
         display: flex;
-            justify-content: flex-end;
         gap: 15px;
         position: absolute;
         bottom: 40px; 
     }
+    .techStack.right {
+        justify-content: flex-end;
+    }
+
     .techStack p {
         font-family: monospace;
     }
     .techStack.links {
         position: absolute;
         bottom: 10px;
+    }
+    .techStack.links.right{
+        justify-content: flex-end;
+
     }
     .techStack.links img {
         width: 20px;
