@@ -296,7 +296,7 @@
     .socialIcons img {
         width: 15px;
     }
-
+    
     .vLine {
         width: 20%;
         border: 1px dashed aliceblue;
@@ -349,6 +349,44 @@
         position: absolute;
         border-radius: 8px;
     }
+    .projectImg img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        border-radius: 8px;
+        z-index: 2;
+      }
+      .projectImg:hover::after {
+        opacity: 0;
+    transform: scale(1.2);    
+}
+    .projectImg::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--hoverColor);
+        z-index: 2;
+        opacity: 0.3;
+        border-radius: 8px;
+        mix-blend-mode: exclusion;
+        /* screen
+        overlay
+        soft-light
+         multiply
+        hard-light
+        color-dodge
+        color-burn
+        difference
+        exclusion */
+        transition: all 0.3s cubic-bezier(.43,.28,0,1.01);
+    }
+    .projectImg:hover::after {
+        opacity: 0;
+    transform: scale(1.1);
+    cursor: pointer;
+    }
     .projectImg.right {
         left: 0;
     }
@@ -385,6 +423,7 @@
         padding: 20px;
         border-radius: 8px;
         opacity: 0.9;
+        z-index: 4;
     }
     .projectDescription.right{
         text-align: right;
