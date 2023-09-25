@@ -1,0 +1,54 @@
+* {
+  color: aliceblue;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(218, 238, 255);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+  width: 450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+    justify-content: space-between;
+  background-color: rgb(28, 38, 49);
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 20px rgb(30, 33, 36, 0.6));
+}
+.playground {
+
+}
+.scores {
+  height: 8%;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+  background-color: rgb(45, 58, 73);
+  }
+  .playingButtons {
+    height: 8%;
+    border-radius: 0 0 10px 10px ;
+    display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    background-color: rgb(45, 58, 73);
+  }
+  .playingButtons p {
+    height: 100%;
+    width: 25%;
+    display: grid;
+      place-items: center;
+      border-right: 2px solid rgb(218, 238, 255);
+    cursor: pointer;
+    user-select: none;
+  }
+  .playingButtons .leftArrow {
+    border: 0;
+
+  }
