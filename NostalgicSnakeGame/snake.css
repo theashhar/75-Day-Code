@@ -1,6 +1,7 @@
 * {
   color: aliceblue;
 }
+:root 
 body {
   min-height: 100vh;
   margin: 0;
@@ -11,8 +12,8 @@ body {
     align-items: center;
 }
 .wrapper {
-  width: 450px;
-  height: 550px;
+  width: 484px;
+  height: 564px;
   display: flex;
   flex-direction: column;
     justify-content: space-between;
@@ -24,7 +25,7 @@ body {
 
 }
 .scores {
-  height: 8%;
+  height: 40px;
   border-radius: 10px 10px 0 0;
   display: flex;
     justify-content: space-around;
@@ -32,7 +33,7 @@ body {
   background-color: rgb(45, 58, 73);
   }
   .playingButtons {
-    height: 8%;
+    height: 40px;
     border-radius: 0 0 10px 10px ;
     display: flex;
       justify-content: space-evenly;
