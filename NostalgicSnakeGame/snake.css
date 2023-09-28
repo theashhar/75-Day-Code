@@ -30,7 +30,7 @@ body {
   display: flex;
     justify-content: space-around;
     align-items: center;
-  background-color: rgb(45, 58, 73);
+  background-color: rgb(36, 46, 57);
   }
   .playingButtons {
     height: 40px;
@@ -38,7 +38,7 @@ body {
     display: flex;
       justify-content: space-evenly;
       align-items: center;
-    background-color: rgb(45, 58, 73);
+    background-color: rgb(36, 46, 57);
   }
   .playingButtons p {
     height: 100%;

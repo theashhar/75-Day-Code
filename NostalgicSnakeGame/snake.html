@@ -10,11 +10,11 @@
 <body>
   <div class="wrapper">
     <div class="scores">
-      <p>score:5</p>
-      <p>Highscore:5</p>
+      <p id="score">score: 0</p>
+      <p>Highscore: 0</p>
     </div>
     <canvas id="playground"></canvas>
-    <div class="playingButtons">
+    <div class="playingButtons" onkeydown=changeDirection()>
       <p class="topArrow">&#8593;</p>
       <p class="rightArrow">&#8594;</p>
       <p class="bottomArrow">&#8595;</p>
