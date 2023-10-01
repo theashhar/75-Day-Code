@@ -172,6 +172,7 @@ width: 330px;
         display: flex;
             justify-content: center;
             align-items:center;
+            
         /* overflow: auto; */
         /* scroll-snap-type: x mandatory; */
     }
@@ -186,7 +187,6 @@ width: 330px;
     object-fit: cover; */
 }
     .moreHeight{
-
         height: 200%;
     }
     .square {
@@ -367,9 +367,91 @@ width: 330px;
 
     }
 @media only screen and (max-width: 600px){
+    :root {
+        --mainHeading: 32px;
+        --subHeading: 25px;
+        --smallFont: 13px;
+        --themeColor: #28c1e0;
+        --bgBolor: #161c1e;
+        --boxColor: #21272a;
+        --selectColor: #44535b;
+        --hoverColor: #05333c;
+    }
+    p {
+        font-size: small ;
+    }
+    #devAndDesign {
+        margin: -20px 0 35px 0;
+    }
+    .hero {
+        flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        position: relative;
+        /* margin: 0 0 8vh 0; */
+
+    }
+    /* .mainImage  {
+        position: absolute;
+        left: -60px;
+    } */
+    .mainImage img {
+        width: 200px;
+        }
+    .heroText {
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    }
+    /* .heroText h1 {
+        margin: 0;
+    } */
+    .companiesPanel {
+        height: 150px;
+    }
+    .slideWrap {
+        margin-top: -20px;
+    }
+    .slider{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .moreHeight{
+        height: 90%;
+    }
+    .square {
+        height: 80%;
+    }
+    .slider img:not(.moreHeight, .square), .slide2 img:not(.moreHeight, .square){     
+        height: 70%
+    }
     .headerItems.desktop {
     display: none;
     }
+
+
+    .servicesBox img {
+        width: 25px;
+    }
+    h3 {
+        font-size: medium;
+    }
+    .servicesContainer {
+        height: 100vh;
+    }
+    .servicesBox {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .services {
+        width: 80vw;
+    }
+    .darkBox {
+        width: 100%;
+
+    }
+    
     .headerItems.mobile {
         position: fixed;
             top: -7px;
@@ -386,15 +468,8 @@ width: 330px;
         overflow-y: hidden;
         z-index: 1;
         transition: 0.5s cubic-bezier(.43,.28,0,1.01);
-
         opacity: 0;
     } 
-    /* .headerItems::before {
-        content: "";
-        width: 100vw;
-        height: 100vh;
-        background-color: #05333c;
-    } */
     .slash {
         display: none;
     }
@@ -410,5 +485,9 @@ width: 330px;
     }
     .logo {
         width: 130px;
+    }
+    /* to be changed */
+    .navbar.mobile {
+        display: none;
     }
 }
