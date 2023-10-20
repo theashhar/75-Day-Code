@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Initial CSS for the element */
+  #myElement {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.5s;
+  }
+
+  /* CSS for the body blur */
+  .blurred {
+    filter: blur(5px); /* Adjust the blur radius as needed */
+  }
+</style>
+</head>
+<body>
+  <div id="myElement"></div>
+
+  <script>
+    // Function to scale the element and then hide it
+    function scaleElement() {
+      const element = document.getElementById('myElement');
+      element.style.transform = 'scale(1.5)'; // Increase the scale to 1.5 (adjust as needed)
+
+      // Add the 'blurred' class to the body to apply the blur effect
+      document.body.classList.add('blurred');
+
+      // Set a timeout to hide the element and remove the blur class after a delay (e.g., 3 seconds)
+      setTimeout(function() {
+        element.style.display = 'none';
+        document.body.classList.remove('blurred');
+      }, 3000); // 3000 milliseconds = 3 seconds
+    }
+
+    // Delay before scaling (3 seconds)
+    const delay = 3000;
+
+    // Set a timeout to trigger the scaling after the delay
+    window.onload = function() {
+      setTimeout(scaleElement, delay);
+    };
+  </script>
+</body>
+</html>

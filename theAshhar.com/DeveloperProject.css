@@ -25,7 +25,7 @@
     :root {
         --mainHeading: 40px;
         --subHeading: 35px;
-        --smallFont: 18px;
+        --smallFont: 16px;
         --themeColor: #28c1e0;
         --bgBolor: #161c1e;
         --boxColor: #21272a;
@@ -49,19 +49,24 @@
         height: 8vh;
         display: flex;
             justify-content: space-between;
-        margin: 1vh 0 0 40px;
+        margin: 1vh 0 11vh 0px;
+        /* padding: 0 20px 0 20px; */
+    
     }
     .logo {
-        width: 140px;
+        width: 160px;
         cursor: pointer;
+        padding: 0 0 0 20px;
+    
     }
+    
     ul {
-        font-size: calc(var(--smallFont)*0.9);
-        text-decoration: none;
-        list-style: none;
-        margin: 0;
-        gap: 2%;
-        padding: 0;
+     font-size:var(--smallFont);
+     text-decoration: none;
+     list-style: none;
+     margin: 0;
+     gap: 2%;
+     padding: 0;
     }
     li {
         margin: 0;
@@ -70,12 +75,12 @@
         position: relative;
     } 
     .resume {
-        border: 1px solid var(--themeColor);
-        border-radius: 4px;
-        padding: 8px;
-        background-color: var(--bgBolor);
-        font-size: calc(var(--smallFont)*0.9);
-        transition: 0.2s cubic-bezier(.43,.28,0,1.01) ;
+     border: 1px solid var(--themeColor);
+     border-radius: 4px;
+     padding: 8px;
+     background-color: var(--bgBolor);
+     font-size: var(--smallFont);
+     transition: 0.2s cubic-bezier(.43,.28,0,1.01) ;
     }  
     li:not(.slash, .resume)::after {
         content:'';
@@ -97,7 +102,11 @@
         background-color: var(--hoverColor);
     }
     .resume:not(#navResume):hover {
-        transform: translateY(-3px);
+        transform: translateY(-3px);}
+        
+    #helloBtn {
+        z-index: 1;
+        margin-top: 70px;
     }
     li:not(.slash):hover {
         color: var(--themeColor);
@@ -113,7 +122,7 @@
             justify-content: center;
             align-items: center ;
         padding-right: 2%;
-    }
+    }    
     .Designhero {    
         height: 80vh;
         width: 100vw;
@@ -266,10 +275,10 @@
     }
     }
     .socials {
-        height: 10vh;
+        height: 40px;
         width: 100%;
         position: absolute;
-            bottom: 10;
+            bottom: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -277,21 +286,11 @@
     .socialIcons {
         height: 100%;
         width: 40%;
-
         display: flex;
             /* flex-direction: column; */
             justify-content: space-between;
             align-items: center;
             gap: 15px;
-    }
-    .mail {
-        height: 100%;
-        position: absolute;
-            right: 4vw;
-        display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: end;  
     }
     .socialIcons img {
         width: 15px;
@@ -319,7 +318,6 @@
         align-items: center;
 }
     .ProjectHeading {
-        /* padding-top: 70px; */
         cursor: pointer;
         position: relative;
         top: 0;
@@ -355,12 +353,13 @@
         position: absolute;
         object-fit: cover;
         border-radius: 8px;
-        z-index: 2;
+        z-index: 1;
       }
-      .projectImg:hover::after {
+
+      /* .projectImg:hover::after {
         opacity: 0;
     transform: scale(1.2);    
-}
+} */
     .projectImg::after {
         content: "";
         position: absolute;
@@ -370,7 +369,7 @@
         z-index: 2;
         opacity: 0.3;
         border-radius: 8px;
-        mix-blend-mode: exclusion;
+        mix-blend-mode: color-burn;
         /* screen
         overlay
         soft-light
@@ -397,10 +396,9 @@
         height: 100%;
         width: 50%;
         position: absolute;
-        /* background-color: #44535b; */
-        /* opacity: 0.3; */
         display: flex;
             flex-direction: column;
+            /* justify-content: space-around; */
     }
     .textDiv.right {
         right: 0;
@@ -408,8 +406,6 @@
     }
     .textDiv.left {
         left: 0;
-        /* align-items: flex-end; */
-
     }
     .textDiv h2 {
         margin-bottom: 0;
@@ -427,21 +423,26 @@
     }
     .projectDescription.right{
         text-align: right;
-
     }
     .techStack {
-        width: 70%;
+        width: 90%;
+        /* height: 20%; */
         display: flex;
+            flex-wrap: wrap;
+            align-content: center;
         gap: 15px;
         position: absolute;
         bottom: 40px; 
     }
     .techStack.right {
+        /* width: 90%; */
         justify-content: flex-end;
     }
 
     .techStack p {
         font-family: monospace;
+        padding: 0;
+        margin: 0;
     }
     .techStack.links {
         position: absolute;
@@ -453,4 +454,122 @@
     }
     .techStack.links img {
         width: 20px;
+    }
+
+
+    @media only screen and (min-width: 600px) {
+        .navbar.mobile {
+            display: none;
+        }
+    
+        }
+    @media only screen and (max-width: 600px){
+        :root {
+            --mainHeading: 32px;
+            --subHeading: 25px;
+            --smallFont: 15px;
+        }
+        p {
+            font-size: small ;
+        }
+        .projectImg img {
+            height: 110%;
+            filter: blur(2px);
+        }
+          .projectImg::after {
+            height: 110%;
+            /* display: none; */
+          }
+        .featuredProjects {
+            /* height: 1600px; */
+            width: 80vw;
+        }
+        
+        .projectImg {
+            width: 100%;
+            opacity: 0.4;
+        }
+        .textDiv {
+            height: 90%;
+            width: 95%;
+            padding: 5%;
+        justify-content: space-around;
+        }
+        .textDiv h2 {
+            margin: 0;
+        }
+        .textDiv.right {
+            left: 0;
+            align-items: flex-start;
+        }
+        .projectDescription {
+            width: 80%;
+        }
+        .projectDescription.right{
+            text-align: left;
+        }
+        .techStack {
+            /* width: 40%; */
+            gap: 12px;
+            position: static;
+            /* bottom: 40px;  */
+        }
+        .techStack.right {
+            justify-content: flex-start;
+        }
+        .techStack.links {
+            position: static;
+        }
+        .techStack.links.right{
+            justify-content: flex-start;
+        }
+        .socialIcons {
+            width: 85%;
+        }
+
+
+
+        .headerItems.desktop {
+            display: none;
+            }
+        .headerItemsMobile {
+            position: fixed;
+                top: -7px;
+                right: 0px;
+                padding-top: 20px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center ;
+                font-size: medium;
+            background-color: #05333c;
+            overflow: hidden;
+            z-index: 7;
+            transition: 0.4s cubic-bezier(.43,.28,0,1.01);
+            transform: translateX(100%);
+        }
+        .headerItemsMobile.open {
+            transform: translateX(0);
+        }
+        .slash {
+            display: none;
+        }
+        .hamburger {
+            position: absolute;
+                top: 20px;
+                right: 10px;
+            width: 20px;
+            z-index: 8;
+            display: none;
+        }
+        .hamburger.cross {
+            position: fixed;
+            display: none;
+            width: 24px;
+        }
+        .logo {
+            width: 130px;
+        }
     }
